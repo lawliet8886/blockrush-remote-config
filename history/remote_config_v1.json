@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "minSupportedVersion": 1,
+  "features": {
+    "enableDaily": true,
+    "enableOverlord": true,
+    "cleanHudDefault": true,
+    "interstitialEnabled": false,
+    "devPanelEnabled": true
+  },
+  "balance": {
+    "dailyBaseTarget": 12000,
+    "dailyStreakStep": 400,
+    "comboGain": 0.22,
+    "comboDecay": 0.18,
+    "bossEveryClears": 6,
+    "bossCriticalAlsoTriggers": true
+  },
+  "drops": {
+    "tokenDaily": 1,
+    "tokenBoss": 1,
+    "tokenPerfectChance": 0.05,
+    "crateCommonChance": 0.10,
+    "riftWChance": 0.12,
+    "riftWClearsStep": 5
+  },
+  "events": [],
+  "ab": {
+    "experiments": [
+      {
+        "id": "combo_tuning_v1",
+        "variants": [
+          {
+            "name": "A_default",
+            "weight": 50,
+            "overrides": {
+              "balance.comboGain": "0.22",
+              "balance.comboDecay": "0.18"
+            }
+          },
+          {
+            "name": "B_spicier",
+            "weight": 50,
+            "overrides": {
+              "balance.comboGain": "0.26",
+              "balance.comboDecay": "0.16"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
