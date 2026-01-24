@@ -1,53 +1,299 @@
 {
-  "version": 1,
+  "version": 3,
   "minSupportedVersion": 1,
   "features": {
-    "enableDaily": true,
-    "enableOverlord": true,
     "cleanHudDefault": true,
-    "interstitialEnabled": false,
-    "devPanelEnabled": true
+    "enableDaily": true,
+    "enableOverlord": true
   },
   "balance": {
-    "dailyBaseTarget": 12000,
-    "dailyStreakStep": 400,
-    "comboGain": 0.22,
-    "comboDecay": 0.18,
-    "bossEveryClears": 6,
-    "bossCriticalAlsoTriggers": true
+    "comboGain": 0.15,
+    "comboDecay": 0.005,
+    "bossEveryClears": 15,
+    "bossCriticalAlsoTriggers": true,
+    "dailyBaseTarget": 5000,
+    "dailyStreakStep": 500,
+    "assistMockAdSecondsStrong": 30,
+    "assistMockAdSecondsStrongDebug": 2,
+    "assistStrongMaxPerRun": 2,
+    "assistStrongCooldownMinutes": 10,
+    "assistHintFreePerRun": 1,
+    "assistReshuffleCostCoins": 120,
+    "assistReshuffleFreePerRun": 0,
+    "assistShowGlowOnIdleSeconds": 18,
+    "assistShowGlowOnCritical": true
   },
   "drops": {
-    "tokenDaily": 1,
-    "tokenBoss": 1,
     "tokenPerfectChance": 0.05,
-    "crateCommonChance": 0.10,
-    "riftWChance": 0.12,
-    "riftWClearsStep": 5
+    "riftWClearsStep": 50,
+    "riftWChance": 0.12
   },
-  "events": [],
-  "ab": {
-    "experiments": [
-      {
-        "id": "combo_tuning_v1",
-        "variants": [
-          {
-            "name": "A_default",
-            "weight": 50,
-            "overrides": {
-              "balance.comboGain": "0.22",
-              "balance.comboDecay": "0.18"
-            }
-          },
-          {
-            "name": "B_spicier",
-            "weight": 50,
-            "overrides": {
-              "balance.comboGain": "0.26",
-              "balance.comboDecay": "0.16"
-            }
-          }
-        ]
-      }
+  "shop": {
+    "featuredSkinsDailyCount": 3,
+    "featuredRotationSeed": "2026-01",
+    "bundleDiscountPct": 20
+  },
+  "weekly": {
+    "rotationSeed": "2026-01",
+    "entries": [
+      { "id": "weekly_columns", "name": "Column Master", "type": "COLUMNS_25", "weight": 1 },
+      { "id": "weekly_small", "name": "Tiny Titans", "type": "SMALL_PIECES", "weight": 1 },
+      { "id": "weekly_combo", "name": "Combo Frenzy", "type": "COMBO_PLUS_ONE", "weight": 1 },
+      { "id": "weekly_blockers", "name": "Obstacle Course", "type": "START_BLOCKERS", "weight": 1 },
+      { "id": "weekly_speed", "name": "Speed Demon", "type": "FAST_DECAY", "weight": 1 },
+      { "id": "weekly_giant", "name": "Go Big or Go Home", "type": "BIG_PIECES", "weight": 1 }
     ]
+  },
+  "events": [
+    {
+      "id": "event_lunar_new_year_2026",
+      "startKey": "20260129",
+      "endKey": "20260212",
+      "name": "🐴 Lunar New Year",
+      "description": "Year of the Horse! Gallop to victory with 2x coins!",
+      "category": "seasonal",
+      "palette": { "primary": "#FF0000", "accent": "#FFD700", "glow": "#FF4500" },
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 12
+    },
+    {
+      "id": "event_valentines_2026",
+      "startKey": "20260210",
+      "endKey": "20260216",
+      "name": "💕 Valentine's Rush",
+      "description": "Love is in the blocks! Heart-shaped combos give bonus points!",
+      "category": "seasonal",
+      "palette": { "primary": "#FF69B4", "accent": "#FF1493", "glow": "#FFB6C1" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_carnival_2026",
+      "startKey": "20260213",
+      "endKey": "20260218",
+      "name": "🎭 Carnival Chaos",
+      "description": "Samba your way through colorful blocks! Random bonuses every clear!",
+      "category": "seasonal",
+      "palette": { "primary": "#FFD700", "accent": "#00FF00", "glow": "#FF00FF" },
+      "coinMultiplier": 1.75,
+      "mutationOverride": "RANDOM_BONUS"
+    },
+    {
+      "id": "event_st_patrick_2026",
+      "startKey": "20260314",
+      "endKey": "20260320",
+      "name": "🍀 Lucky Blocks",
+      "description": "Find the pot of gold! Every 4-combo has a chance to drop bonus coins!",
+      "category": "seasonal",
+      "palette": { "primary": "#00FF00", "accent": "#228B22", "glow": "#32CD32" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_easter_2026",
+      "startKey": "20260403",
+      "endKey": "20260407",
+      "name": "🐰 Easter Egg Hunt",
+      "description": "Hidden eggs on the board! Clear them for mystery rewards!",
+      "category": "seasonal",
+      "palette": { "primary": "#E6E6FA", "accent": "#FFB347", "glow": "#87CEEB" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_april_fools_2026",
+      "startKey": "20260401",
+      "endKey": "20260402",
+      "name": "🃏 April Fools Mayhem",
+      "description": "Expect the unexpected! Pieces might not be what they seem...",
+      "category": "flash",
+      "palette": { "primary": "#FF00FF", "accent": "#00FFFF", "glow": "#FFFF00" },
+      "coinMultiplier": 2.0,
+      "mutationOverride": "CHAOS_MODE"
+    },
+    {
+      "id": "event_earth_day_2026",
+      "startKey": "20260422",
+      "endKey": "20260424",
+      "name": "🌍 Earth Day",
+      "description": "Go green! Nature-themed blocks and eco rewards!",
+      "category": "seasonal",
+      "palette": { "primary": "#228B22", "accent": "#8B4513", "glow": "#90EE90" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_cinco_de_mayo_2026",
+      "startKey": "20260505",
+      "endKey": "20260507",
+      "name": "🌮 Cinco de Mayo Fiesta",
+      "description": "Arriba! Spicy combos and explosive clears!",
+      "category": "seasonal",
+      "palette": { "primary": "#FF4500", "accent": "#FFD700", "glow": "#00FF00" },
+      "coinMultiplier": 1.75
+    },
+    {
+      "id": "event_summer_solstice_2026",
+      "startKey": "20260620",
+      "endKey": "20260626",
+      "name": "☀️ Summer Solstice",
+      "description": "The longest day! Marathon runs with solar-powered bonuses!",
+      "category": "seasonal",
+      "palette": { "primary": "#FFD700", "accent": "#FF8C00", "glow": "#FFFF00" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_independence_2026",
+      "startKey": "20260704",
+      "endKey": "20260706",
+      "name": "🎆 Fireworks Festival",
+      "description": "Explosive clears! Every line clear triggers fireworks!",
+      "category": "seasonal",
+      "palette": { "primary": "#FF0000", "accent": "#0000FF", "glow": "#FFFFFF" },
+      "coinMultiplier": 2.0
+    },
+    {
+      "id": "event_beach_party_2026",
+      "startKey": "20260715",
+      "endKey": "20260731",
+      "name": "🏖️ Beach Party",
+      "description": "Surf's up! Ride the wave of combos all month long!",
+      "category": "seasonal",
+      "palette": { "primary": "#00CED1", "accent": "#FFD700", "glow": "#87CEEB" },
+      "coinMultiplier": 1.25
+    },
+    {
+      "id": "event_back_to_school_2026",
+      "startKey": "20260825",
+      "endKey": "20260831",
+      "name": "📚 Back to School",
+      "description": "Study hard! XP bonus for strategic plays!",
+      "category": "seasonal",
+      "palette": { "primary": "#4169E1", "accent": "#FFD700", "glow": "#FF6347" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_oktoberfest_2026",
+      "startKey": "20260919",
+      "endKey": "20261004",
+      "name": "🍺 Oktoberfest",
+      "description": "Prost! Celebrate with golden combos and frothy rewards!",
+      "category": "seasonal",
+      "palette": { "primary": "#DAA520", "accent": "#8B4513", "glow": "#FFD700" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_halloween_2026",
+      "startKey": "20261025",
+      "endKey": "20261031",
+      "name": "🎃 Spooky Season",
+      "description": "Ghosts in the grid! Beware of cursed blocks... or embrace them!",
+      "category": "seasonal",
+      "palette": { "primary": "#FF6600", "accent": "#8B00FF", "glow": "#00FF00" },
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 10
+    },
+    {
+      "id": "event_dia_de_muertos_2026",
+      "startKey": "20261101",
+      "endKey": "20261102",
+      "name": "💀 Día de los Muertos",
+      "description": "Honor the spirits! Sugar skull blocks bring sweet rewards!",
+      "category": "seasonal",
+      "palette": { "primary": "#FF1493", "accent": "#FFD700", "glow": "#00FFFF" },
+      "coinMultiplier": 2.0
+    },
+    {
+      "id": "event_thanksgiving_2026",
+      "startKey": "20261126",
+      "endKey": "20261129",
+      "name": "🦃 Thanksgiving Feast",
+      "description": "Gobble up those combos! Harvest bonus coins!",
+      "category": "seasonal",
+      "palette": { "primary": "#D2691E", "accent": "#FF4500", "glow": "#FFD700" },
+      "coinMultiplier": 1.75
+    },
+    {
+      "id": "event_black_friday_2026",
+      "startKey": "20261127",
+      "endKey": "20261130",
+      "name": "🛒 Black Friday Bonanza",
+      "description": "Shop 'til you drop! Massive discounts in the cosmetic shop!",
+      "category": "flash",
+      "palette": { "primary": "#000000", "accent": "#FFD700", "glow": "#FF0000" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_winter_holidays_2026",
+      "startKey": "20261220",
+      "endKey": "20261231",
+      "name": "❄️ Winter Wonderland",
+      "description": "Let it snow! Daily gifts and frozen surprises await!",
+      "category": "seasonal",
+      "palette": { "primary": "#ADD8E6", "accent": "#FFFFFF", "glow": "#00BFFF" },
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 10
+    },
+    {
+      "id": "event_new_years_eve_2026",
+      "startKey": "20261231",
+      "endKey": "20270101",
+      "name": "🎉 New Year's Countdown",
+      "description": "3... 2... 1... HAPPY NEW YEAR! Triple coins at midnight!",
+      "category": "flash",
+      "palette": { "primary": "#FFD700", "accent": "#C0C0C0", "glow": "#FFFFFF" },
+      "coinMultiplier": 3.0
+    },
+    {
+      "id": "event_weekly_boss_rush",
+      "startKey": "20260201",
+      "endKey": "20260202",
+      "name": "👾 Boss Rush Weekend",
+      "description": "Non-stop boss battles! Can you survive the onslaught?",
+      "category": "weekend",
+      "palette": { "primary": "#8B0000", "accent": "#FF4500", "glow": "#FF0000" },
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 5
+    },
+    {
+      "id": "event_combo_challenge",
+      "startKey": "20260215",
+      "endKey": "20260216",
+      "name": "⚡ Combo Challenge",
+      "description": "Chain reaction! How high can you combo?",
+      "category": "weekend",
+      "palette": { "primary": "#00FFFF", "accent": "#FF00FF", "glow": "#FFFF00" },
+      "coinMultiplier": 1.5
+    },
+    {
+      "id": "event_speed_run",
+      "startKey": "20260301",
+      "endKey": "20260302",
+      "name": "🏃 Speed Run Showdown",
+      "description": "Race against time! Fastest clears get legendary rewards!",
+      "category": "weekend",
+      "palette": { "primary": "#FF4500", "accent": "#FFD700", "glow": "#FF0000" },
+      "coinMultiplier": 2.0
+    },
+    {
+      "id": "event_perfect_clear",
+      "startKey": "20260315",
+      "endKey": "20260316",
+      "name": "✨ Perfect Clear Party",
+      "description": "No mistakes allowed! Perfect clears give 5x rewards!",
+      "category": "weekend",
+      "palette": { "primary": "#FFD700", "accent": "#FFFFFF", "glow": "#FFD700" },
+      "coinMultiplier": 2.5
+    },
+    {
+      "id": "event_mystery_monday",
+      "startKey": "20260406",
+      "endKey": "20260407",
+      "name": "❓ Mystery Monday",
+      "description": "What's in the box?! Random rewards for every clear!",
+      "category": "flash",
+      "palette": { "primary": "#800080", "accent": "#FFD700", "glow": "#FF00FF" },
+      "coinMultiplier": 1.5,
+      "mutationOverride": "MYSTERY_REWARDS"
+    }
+  ],
+  "ab": {
+    "experiments": []
   }
 }
