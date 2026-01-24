@@ -1,52 +1,85 @@
-# BlockRush Remote Config
+# 📤 Arquivos para GitHub
 
-Este repositório hospeda o arquivo `remote_config.json` usado pelo app para:
-- balanceamento (combo, daily, boss)
-- live ops (eventos por data)
-- feature flags (liga/desliga modos)
-- A/B test simples (offline bucket)
+Esta pasta contém os arquivos que devem ser colocados no repositório GitHub do remote config.
 
-## Regras
-- NÃO colocar segredos aqui (tokens, chaves, credenciais).
-- Sempre que mudar balance importante, aumente `version`.
-- Datas usam `yyyyMMdd` (ex: 20260117).
+## 📁 Arquivo: `remote_config.json`
 
-## Campos principais
+### Onde colocar no GitHub:
+```
+https://github.com/lawliet8886/blockrush-remote-config/blob/main/remote_config.json
+```
 
-### version / minSupportedVersion
-- `version`: aumenta quando fizer mudanças relevantes
-- `minSupportedVersion`: se o app estiver abaixo disso, ignora config
+### Como atualizar:
+1. Acesse o repositório GitHub `blockrush-remote-config`
+2. Clique no arquivo `remote_config.json`
+3. Clique no ícone de lápis (Edit)
+4. Substitua TODO o conteúdo pelo que está nesta pasta
+5. Clique em "Commit changes"
 
-### features
-- enableDaily: habilita Daily Rift
-- enableOverlord: habilita Overlord Encounter
-- cleanHudDefault: default do HUD clean
-- interstitialEnabled: deve ficar false por padrão
-- devPanelEnabled: painel dev (recomendado true em testes)
+### ⚠️ Importante:
+- **Os dois arquivos devem ser IGUAIS:**
+  - `Paragithub/remote_config.json` (aqui)
+  - `app/src/main/assets/remote_config_default.json` (no projeto)
+  
+- **Sempre aumente a `version`** quando fizer mudanças!
+  - Versão atual: **3**
+  
+- **O app busca atualizações a cada 12 horas**
 
-### balance
-- dailyBaseTarget: alvo base do Daily
-- dailyStreakStep: quanto aumenta por dia de streak
-- comboGain / comboDecay: tuning do meter (0..1)
-- bossEveryClears: frequência do boss no modo Overlord (ou gatilho)
-- bossCriticalAlsoTriggers: se CRITICAL também pode chamar boss
+---
 
-### drops
-- tokenDaily: tokens ao completar Daily
-- tokenBoss: tokens ao vencer boss
-- tokenPerfectChance: chance de token em Perfect Clear (0..1)
-- crateCommonChance: chance de drop cosmético common
-- riftWChance + riftWClearsStep: chance e gatilho do W no Daily (se você usar isso)
+## 🎉 Eventos Incluídos (2026)
 
-## Eventos
-Em `events`, cada evento tem:
-- id
-- startKey / endKey
-- mutationOverride (opcional)
-- coinMultiplier (opcional)
-- bossFreqOverride (opcional)
+| Data | Evento | Bônus |
+|------|--------|-------|
+| 29 Jan - 12 Feb | 🐴 Lunar New Year | 2x coins |
+| 10-16 Feb | 💕 Valentine's Rush | 1.5x coins |
+| 13-18 Feb | 🎭 Carnival Chaos | 1.75x coins |
+| 14-20 Mar | 🍀 Lucky Blocks | 1.5x coins |
+| 01 Apr | 🃏 April Fools Mayhem | 2x coins |
+| 03-07 Apr | 🐰 Easter Egg Hunt | 1.5x coins |
+| 22-24 Apr | 🌍 Earth Day | 1.5x coins |
+| 05-07 May | 🌮 Cinco de Mayo | 1.75x coins |
+| 20-26 Jun | ☀️ Summer Solstice | 1.5x coins |
+| 04-06 Jul | 🎆 Fireworks Festival | 2x coins |
+| 15-31 Jul | 🏖️ Beach Party | 1.25x coins |
+| 25-31 Aug | 📚 Back to School | 1.5x coins |
+| 19 Sep - 04 Oct | 🍺 Oktoberfest | 1.5x coins |
+| 25-31 Oct | 🎃 Spooky Season | 2x coins + Boss Rush |
+| 01-02 Nov | 💀 Día de los Muertos | 2x coins |
+| 26-29 Nov | 🦃 Thanksgiving | 1.75x coins |
+| 27-30 Nov | 🛒 Black Friday | 1.5x coins + Shop Sale |
+| 20-31 Dec | ❄️ Winter Wonderland | 2x coins + Daily Gifts |
+| 31 Dec - 01 Jan | 🎉 New Year's Countdown | 3x coins! |
 
-## A/B tests
-Em `ab.experiments`, cada experimento tem variantes com `weight` e `overrides`.
-Overrides são strings do tipo:
-- "balance.comboGain": "0.26"
+### Eventos de Fim de Semana (Rotativos)
+- 👾 Boss Rush Weekend
+- ⚡ Combo Challenge
+- 🏃 Speed Run Showdown
+- ✨ Perfect Clear Party
+- ❓ Mystery Monday
+
+---
+
+## 🔧 Como Adicionar Novo Evento
+
+Adicione um objeto na lista `events`:
+
+```json
+{
+  "id": "event_nome_unico",
+  "startKey": "YYYYMMDD",
+  "endKey": "YYYYMMDD",
+  "name": "🎮 Nome do Evento",
+  "description": "Descrição divertida!",
+  "category": "seasonal",
+  "palette": { "primary": "#COR1", "accent": "#COR2", "glow": "#COR3" },
+  "coinMultiplier": 1.5,
+  "bossFreqOverride": 10
+}
+```
+
+### Campos opcionais:
+- `bossFreqOverride`: Frequência de boss (menor = mais frequente)
+- `mutationOverride`: Modificador especial de gameplay
+- `category`: "seasonal", "weekend", "flash"
