@@ -22,7 +22,7 @@ https://github.com/lawliet8886/blockrush-remote-config/blob/main/remote_config.j
   - `app/src/main/assets/remote_config_default.json` (no projeto)
   
 - **Sempre aumente a `version`** quando fizer mudanças!
-  - Versão atual: **3**
+  - Versão atual: **4**
   
 - **O app busca atualizações a cada 12 horas**
 
