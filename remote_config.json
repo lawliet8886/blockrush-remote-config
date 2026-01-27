@@ -36,12 +36,42 @@
   "weekly": {
     "rotationSeed": "2026-01",
     "entries": [
-      { "id": "weekly_columns", "name": "Column Master", "type": "COLUMNS_25", "weight": 1 },
-      { "id": "weekly_small", "name": "Tiny Titans", "type": "SMALL_PIECES", "weight": 1 },
-      { "id": "weekly_combo", "name": "Combo Frenzy", "type": "COMBO_PLUS_ONE", "weight": 1 },
-      { "id": "weekly_blockers", "name": "Obstacle Course", "type": "START_BLOCKERS", "weight": 1 },
-      { "id": "weekly_speed", "name": "Speed Demon", "type": "FAST_DECAY", "weight": 1 },
-      { "id": "weekly_giant", "name": "Go Big or Go Home", "type": "BIG_PIECES", "weight": 1 }
+      {
+        "id": "weekly_columns",
+        "name": "Column Master",
+        "type": "COLUMNS_25",
+        "weight": 1
+      },
+      {
+        "id": "weekly_small",
+        "name": "Tiny Titans",
+        "type": "SMALL_PIECES",
+        "weight": 1
+      },
+      {
+        "id": "weekly_combo",
+        "name": "Combo Frenzy",
+        "type": "COMBO_PLUS_ONE",
+        "weight": 1
+      },
+      {
+        "id": "weekly_blockers",
+        "name": "Obstacle Course",
+        "type": "START_BLOCKERS",
+        "weight": 1
+      },
+      {
+        "id": "weekly_speed",
+        "name": "Speed Demon",
+        "type": "FAST_DECAY",
+        "weight": 1
+      },
+      {
+        "id": "weekly_giant",
+        "name": "Go Big or Go Home",
+        "type": "BIG_PIECES",
+        "weight": 1
+      }
     ]
   },
   "dailyChallenges": {
@@ -163,9 +193,21 @@
           "completed": "Concluído"
         },
         "entries": [
-          { "phaseId": "daily_phase_1", "title": "Aquecimento Relâmpago", "reward": "+150 moedas" },
-          { "phaseId": "daily_phase_2", "title": "Precisão em Série", "reward": "+1 caixa comum" },
-          { "phaseId": "daily_phase_3", "title": "Sprint Final", "reward": "+1 boost de moedas (2x por 12h)" }
+          {
+            "phaseId": "daily_phase_1",
+            "title": "Aquecimento Relâmpago",
+            "reward": "+150 moedas"
+          },
+          {
+            "phaseId": "daily_phase_2",
+            "title": "Precisão em Série",
+            "reward": "+1 caixa comum"
+          },
+          {
+            "phaseId": "daily_phase_3",
+            "title": "Sprint Final",
+            "reward": "+1 boost de moedas (2x por 12h)"
+          }
         ]
       },
       "howItWorks": {
@@ -179,9 +221,18 @@
       "rewards": {
         "title": "Recompensas por fase",
         "milestones": [
-          { "phaseId": "daily_phase_1", "reward": "+150 moedas" },
-          { "phaseId": "daily_phase_2", "reward": "+1 caixa comum" },
-          { "phaseId": "daily_phase_3", "reward": "+1 boost de moedas (2x por 12h)" }
+          {
+            "phaseId": "daily_phase_1",
+            "reward": "+150 moedas"
+          },
+          {
+            "phaseId": "daily_phase_2",
+            "reward": "+1 caixa comum"
+          },
+          {
+            "phaseId": "daily_phase_3",
+            "reward": "+1 boost de moedas (2x por 12h)"
+          }
         ]
       }
     },
@@ -213,10 +264,26 @@
           "completed": "Concluído"
         },
         "entries": [
-          { "phaseId": "weekly_phase_1", "title": "Ritmo de Abertura", "reward": "+250 moedas" },
-          { "phaseId": "weekly_phase_2", "title": "Resistência", "reward": "+1 caixa rara" },
-          { "phaseId": "weekly_phase_3", "title": "Corrida de Linhas", "reward": "+400 moedas" },
-          { "phaseId": "weekly_phase_4", "title": "Clímax da Semana", "reward": "+1 boost de moedas (2x por 24h)" }
+          {
+            "phaseId": "weekly_phase_1",
+            "title": "Ritmo de Abertura",
+            "reward": "+250 moedas"
+          },
+          {
+            "phaseId": "weekly_phase_2",
+            "title": "Resistência",
+            "reward": "+1 caixa rara"
+          },
+          {
+            "phaseId": "weekly_phase_3",
+            "title": "Corrida de Linhas",
+            "reward": "+400 moedas"
+          },
+          {
+            "phaseId": "weekly_phase_4",
+            "title": "Clímax da Semana",
+            "reward": "+1 boost de moedas (2x por 24h)"
+          }
         ]
       },
       "howItWorks": {
@@ -230,10 +297,22 @@
       "rewards": {
         "title": "Recompensas por fase",
         "milestones": [
-          { "phaseId": "weekly_phase_1", "reward": "+250 moedas" },
-          { "phaseId": "weekly_phase_2", "reward": "+1 caixa rara" },
-          { "phaseId": "weekly_phase_3", "reward": "+400 moedas" },
-          { "phaseId": "weekly_phase_4", "reward": "+1 boost de moedas (2x por 24h)" }
+          {
+            "phaseId": "weekly_phase_1",
+            "reward": "+250 moedas"
+          },
+          {
+            "phaseId": "weekly_phase_2",
+            "reward": "+1 caixa rara"
+          },
+          {
+            "phaseId": "weekly_phase_3",
+            "reward": "+400 moedas"
+          },
+          {
+            "phaseId": "weekly_phase_4",
+            "reward": "+1 boost de moedas (2x por 24h)"
+          }
         ]
       }
     }
@@ -246,9 +325,60 @@
       "name": "🐴 Lunar New Year",
       "description": "Ano do Cavalo! Corridas diárias liberam baús e 2x moedas — mantenha a sequência para multiplicadores ainda maiores.",
       "category": "seasonal",
-      "palette": { "primary": "#FF0000", "accent": "#FFD700", "glow": "#FF4500" },
+      "palette": {
+        "primary": "#FF0000",
+        "accent": "#FFD700",
+        "glow": "#FF4500"
+      },
       "coinMultiplier": 2.0,
-      "bossFreqOverride": 12
+      "bossFreqOverride": 12,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_lunar_new_year_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_lunar_new_year_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_lunar_new_year_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_valentines_2026",
@@ -257,8 +387,59 @@
       "name": "💕 Valentine's Rush",
       "description": "Amor no ar e no tabuleiro: combos em cadeia ativam corações que explodem em bônus e presenteiam moedas extras.",
       "category": "seasonal",
-      "palette": { "primary": "#FF69B4", "accent": "#FF1493", "glow": "#FFB6C1" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#FF69B4",
+        "accent": "#FF1493",
+        "glow": "#FFB6C1"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_valentines_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_valentines_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_valentines_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_carnival_2026",
@@ -267,9 +448,61 @@
       "name": "🎭 Carnival Chaos",
       "description": "Samba até a vitória! A cada clear, rodam bônus surpresa que mudam a partida e oferecem recompensas instantâneas.",
       "category": "seasonal",
-      "palette": { "primary": "#FFD700", "accent": "#00FF00", "glow": "#FF00FF" },
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#00FF00",
+        "glow": "#FF00FF"
+      },
       "coinMultiplier": 1.75,
-      "mutationOverride": "RANDOM_BONUS"
+      "mutationOverride": "RANDOM_BONUS",
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_carnival_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_carnival_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.0
+          },
+          {
+            "id": "event_carnival_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.25,
+            "mutationOverride": "RANDOM_BONUS"
+          }
+        ]
+      }
     },
     {
       "id": "event_st_patrick_2026",
@@ -278,8 +511,59 @@
       "name": "🍀 Lucky Blocks",
       "description": "Sorte grande: combos 4+ plantam trevos no campo. Quebre-os rápido para chuva de moedas.",
       "category": "seasonal",
-      "palette": { "primary": "#00FF00", "accent": "#228B22", "glow": "#32CD32" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#00FF00",
+        "accent": "#228B22",
+        "glow": "#32CD32"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_st_patrick_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_st_patrick_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_st_patrick_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_easter_2026",
@@ -288,8 +572,59 @@
       "name": "🐰 Easter Egg Hunt",
       "description": "Ovos escondidos no tabuleiro! Encontre, limpe e destrave prêmios misteriosos a cada rodada.",
       "category": "seasonal",
-      "palette": { "primary": "#E6E6FA", "accent": "#FFB347", "glow": "#87CEEB" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#E6E6FA",
+        "accent": "#FFB347",
+        "glow": "#87CEEB"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_easter_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_easter_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_easter_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_april_fools_2026",
@@ -298,9 +633,61 @@
       "name": "🃏 April Fools Mayhem",
       "description": "Nada é o que parece: peças disfarçadas, inversões repentinas e recompensas dobradas para quem se adaptar rápido.",
       "category": "flash",
-      "palette": { "primary": "#FF00FF", "accent": "#00FFFF", "glow": "#FFFF00" },
+      "palette": {
+        "primary": "#FF00FF",
+        "accent": "#00FFFF",
+        "glow": "#FFFF00"
+      },
       "coinMultiplier": 2.0,
-      "mutationOverride": "CHAOS_MODE"
+      "mutationOverride": "CHAOS_MODE",
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_april_fools_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_april_fools_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_april_fools_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5,
+            "mutationOverride": "CHAOS_MODE"
+          }
+        ]
+      }
     },
     {
       "id": "event_earth_day_2026",
@@ -309,8 +696,59 @@
       "name": "🌍 Earth Day",
       "description": "Verde é vitória: limpezas consecutivas plantam árvores no grid e rendem bônus ecológicos.",
       "category": "seasonal",
-      "palette": { "primary": "#228B22", "accent": "#8B4513", "glow": "#90EE90" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#228B22",
+        "accent": "#8B4513",
+        "glow": "#90EE90"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_earth_day_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_earth_day_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_earth_day_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_cinco_de_mayo_2026",
@@ -319,8 +757,59 @@
       "name": "🌮 Cinco de Mayo Fiesta",
       "description": "Arriba! Combos apimentados ativam explosões em cadeia e multiplicadores de festa.",
       "category": "seasonal",
-      "palette": { "primary": "#FF4500", "accent": "#FFD700", "glow": "#00FF00" },
-      "coinMultiplier": 1.75
+      "palette": {
+        "primary": "#FF4500",
+        "accent": "#FFD700",
+        "glow": "#00FF00"
+      },
+      "coinMultiplier": 1.75,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_cinco_de_mayo_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_cinco_de_mayo_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.0
+          },
+          {
+            "id": "event_cinco_de_mayo_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.25
+          }
+        ]
+      }
     },
     {
       "id": "event_summer_solstice_2026",
@@ -329,8 +818,59 @@
       "name": "☀️ Summer Solstice",
       "description": "Dia mais longo, partida mais épica: runs maratona com bônus solares que crescem a cada clear.",
       "category": "seasonal",
-      "palette": { "primary": "#FFD700", "accent": "#FF8C00", "glow": "#FFFF00" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#FF8C00",
+        "glow": "#FFFF00"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_summer_solstice_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_summer_solstice_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_summer_solstice_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_independence_2026",
@@ -339,8 +879,59 @@
       "name": "🎆 Fireworks Festival",
       "description": "Cada linha vira fogos! Sequências longas detonam o tabuleiro e entregam prêmios especiais.",
       "category": "seasonal",
-      "palette": { "primary": "#FF0000", "accent": "#0000FF", "glow": "#FFFFFF" },
-      "coinMultiplier": 2.0
+      "palette": {
+        "primary": "#FF0000",
+        "accent": "#0000FF",
+        "glow": "#FFFFFF"
+      },
+      "coinMultiplier": 2.0,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_independence_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_independence_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_independence_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_beach_party_2026",
@@ -349,8 +940,59 @@
       "name": "🏖️ Beach Party",
       "description": "Pegue a onda: combos contínuos criam marés de bônus e desbloqueiam recompensas diárias.",
       "category": "seasonal",
-      "palette": { "primary": "#00CED1", "accent": "#FFD700", "glow": "#87CEEB" },
-      "coinMultiplier": 1.25
+      "palette": {
+        "primary": "#00CED1",
+        "accent": "#FFD700",
+        "glow": "#87CEEB"
+      },
+      "coinMultiplier": 1.25,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_beach_party_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_beach_party_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.5
+          },
+          {
+            "id": "event_beach_party_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 1.75
+          }
+        ]
+      }
     },
     {
       "id": "event_back_to_school_2026",
@@ -359,8 +1001,59 @@
       "name": "📚 Back to School",
       "description": "Estratégia vale nota: jogadas inteligentes rendem XP extra e metas semanais com recompensas.",
       "category": "seasonal",
-      "palette": { "primary": "#4169E1", "accent": "#FFD700", "glow": "#FF6347" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#4169E1",
+        "accent": "#FFD700",
+        "glow": "#FF6347"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_back_to_school_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_back_to_school_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_back_to_school_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_oktoberfest_2026",
@@ -369,8 +1062,59 @@
       "name": "🍺 Oktoberfest",
       "description": "Prost! Combos dourados ativam rodadas de prêmios e itens comemorativos.",
       "category": "seasonal",
-      "palette": { "primary": "#DAA520", "accent": "#8B4513", "glow": "#FFD700" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#DAA520",
+        "accent": "#8B4513",
+        "glow": "#FFD700"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_oktoberfest_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_oktoberfest_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_oktoberfest_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_halloween_2026",
@@ -379,9 +1123,60 @@
       "name": "🎃 Spooky Season",
       "description": "Assombrações no grid: blocos amaldiçoados podem atrapalhar — ou turbinar sua pontuação se você domá-los.",
       "category": "seasonal",
-      "palette": { "primary": "#FF6600", "accent": "#8B00FF", "glow": "#00FF00" },
+      "palette": {
+        "primary": "#FF6600",
+        "accent": "#8B00FF",
+        "glow": "#00FF00"
+      },
       "coinMultiplier": 2.0,
-      "bossFreqOverride": 10
+      "bossFreqOverride": 10,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_halloween_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_halloween_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_halloween_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_dia_de_muertos_2026",
@@ -390,8 +1185,59 @@
       "name": "💀 Día de los Muertos",
       "description": "Honre os espíritos: caveiras de açúcar no tabuleiro concedem doces recompensas e efeitos visuais únicos.",
       "category": "seasonal",
-      "palette": { "primary": "#FF1493", "accent": "#FFD700", "glow": "#00FFFF" },
-      "coinMultiplier": 2.0
+      "palette": {
+        "primary": "#FF1493",
+        "accent": "#FFD700",
+        "glow": "#00FFFF"
+      },
+      "coinMultiplier": 2.0,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_dia_de_muertos_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_dia_de_muertos_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_dia_de_muertos_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_thanksgiving_2026",
@@ -400,8 +1246,59 @@
       "name": "🦃 Thanksgiving Feast",
       "description": "Festa de combos: colheitas em sequência liberam bônus de moedas e brindes diários.",
       "category": "seasonal",
-      "palette": { "primary": "#D2691E", "accent": "#FF4500", "glow": "#FFD700" },
-      "coinMultiplier": 1.75
+      "palette": {
+        "primary": "#D2691E",
+        "accent": "#FF4500",
+        "glow": "#FFD700"
+      },
+      "coinMultiplier": 1.75,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_thanksgiving_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_thanksgiving_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.0
+          },
+          {
+            "id": "event_thanksgiving_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.25
+          }
+        ]
+      }
     },
     {
       "id": "event_black_friday_2026",
@@ -410,8 +1307,59 @@
       "name": "🛒 Black Friday Bonanza",
       "description": "Descontos insanos e ofertas-relâmpago na loja cosmética. Quanto mais jogar, melhores os cupons.",
       "category": "flash",
-      "palette": { "primary": "#000000", "accent": "#FFD700", "glow": "#FF0000" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#000000",
+        "accent": "#FFD700",
+        "glow": "#FF0000"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_black_friday_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_black_friday_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_black_friday_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_winter_holidays_2026",
@@ -420,9 +1368,60 @@
       "name": "❄️ Winter Wonderland",
       "description": "Neve, presentes diários e surpresas congeladas. Complete missões para desbloquear recompensas especiais.",
       "category": "seasonal",
-      "palette": { "primary": "#ADD8E6", "accent": "#FFFFFF", "glow": "#00BFFF" },
+      "palette": {
+        "primary": "#ADD8E6",
+        "accent": "#FFFFFF",
+        "glow": "#00BFFF"
+      },
       "coinMultiplier": 2.0,
-      "bossFreqOverride": 10
+      "bossFreqOverride": 10,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_winter_holidays_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_winter_holidays_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_winter_holidays_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_new_years_eve_2026",
@@ -431,8 +1430,59 @@
       "name": "🎉 New Year's Countdown",
       "description": "Contagem regressiva com recompensas por hora. No zero, moedas triplicadas e bônus exclusivos.",
       "category": "flash",
-      "palette": { "primary": "#FFD700", "accent": "#C0C0C0", "glow": "#FFFFFF" },
-      "coinMultiplier": 3.0
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#C0C0C0",
+        "glow": "#FFFFFF"
+      },
+      "coinMultiplier": 3.0,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_new_years_eve_2026_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_new_years_eve_2026_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 3.25
+          },
+          {
+            "id": "event_new_years_eve_2026_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 3.5
+          }
+        ]
+      }
     },
     {
       "id": "event_weekly_boss_rush",
@@ -441,9 +1491,60 @@
       "name": "👾 Boss Rush Weekend",
       "description": "Chefes sem parar: sobreviva às ondas, acumule troféus e desbloqueie loot raro.",
       "category": "weekend",
-      "palette": { "primary": "#8B0000", "accent": "#FF4500", "glow": "#FF0000" },
+      "palette": {
+        "primary": "#8B0000",
+        "accent": "#FF4500",
+        "glow": "#FF0000"
+      },
       "coinMultiplier": 2.0,
-      "bossFreqOverride": 5
+      "bossFreqOverride": 5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_weekly_boss_rush_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_weekly_boss_rush_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_weekly_boss_rush_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_combo_challenge",
@@ -452,8 +1553,59 @@
       "name": "⚡ Combo Challenge",
       "description": "Reação em cadeia: metas de combo escalonadas e recompensas por recorde pessoal.",
       "category": "weekend",
-      "palette": { "primary": "#00FFFF", "accent": "#FF00FF", "glow": "#FFFF00" },
-      "coinMultiplier": 1.5
+      "palette": {
+        "primary": "#00FFFF",
+        "accent": "#FF00FF",
+        "glow": "#FFFF00"
+      },
+      "coinMultiplier": 1.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_combo_challenge_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_combo_challenge_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_combo_challenge_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0
+          }
+        ]
+      }
     },
     {
       "id": "event_speed_run",
@@ -462,8 +1614,59 @@
       "name": "🏃 Speed Run Showdown",
       "description": "Contra o relógio: placar global de tempo e recompensas lendárias para os mais rápidos.",
       "category": "weekend",
-      "palette": { "primary": "#FF4500", "accent": "#FFD700", "glow": "#FF0000" },
-      "coinMultiplier": 2.0
+      "palette": {
+        "primary": "#FF4500",
+        "accent": "#FFD700",
+        "glow": "#FF0000"
+      },
+      "coinMultiplier": 2.0,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_speed_run_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_speed_run_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.25
+          },
+          {
+            "id": "event_speed_run_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.5
+          }
+        ]
+      }
     },
     {
       "id": "event_perfect_clear",
@@ -472,8 +1675,59 @@
       "name": "✨ Perfect Clear Party",
       "description": "Sem erro permitido: perfect clears acumulam multiplicadores crescentes e prêmios raros.",
       "category": "weekend",
-      "palette": { "primary": "#FFD700", "accent": "#FFFFFF", "glow": "#FFD700" },
-      "coinMultiplier": 2.5
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#FFFFFF",
+        "glow": "#FFD700"
+      },
+      "coinMultiplier": 2.5,
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_perfect_clear_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_perfect_clear_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 2.75
+          },
+          {
+            "id": "event_perfect_clear_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 3.0
+          }
+        ]
+      }
     },
     {
       "id": "event_mystery_monday",
@@ -482,9 +1736,61 @@
       "name": "❓ Mystery Monday",
       "description": "Segredos a cada clear: caixas misteriosas com chances de super bônus e itens surpresa.",
       "category": "flash",
-      "palette": { "primary": "#800080", "accent": "#FFD700", "glow": "#FF00FF" },
+      "palette": {
+        "primary": "#800080",
+        "accent": "#FFD700",
+        "glow": "#FF00FF"
+      },
       "coinMultiplier": 1.5,
-      "mutationOverride": "MYSTERY_REWARDS"
+      "mutationOverride": "MYSTERY_REWARDS",
+      "challengePhases": {
+        "progression": {
+          "type": "SEQUENTIAL",
+          "unlockRule": "COMPLETE_CURRENT",
+          "showRemainingOnEnter": true,
+          "remainingPhasesLabel": "Faltam {remaining} fases"
+        },
+        "totalPhases": 3,
+        "phases": [
+          {
+            "id": "event_mystery_monday_phase_1",
+            "title": "Aquecimento do Evento",
+            "description": "Complete metas iniciais para liberar a sequência do evento.",
+            "requirements": {
+              "minCombos": 4,
+              "linesCleared": 30,
+              "maxErrors": 3
+            },
+            "reward": "+150 moedas"
+          },
+          {
+            "id": "event_mystery_monday_phase_2",
+            "title": "Ritmo Crescente",
+            "description": "Mantenha a constância para avançar às recompensas superiores.",
+            "requirements": {
+              "minCombos": 6,
+              "linesCleared": 60,
+              "timeLimitSeconds": 300
+            },
+            "reward": "+1 caixa especial",
+            "coinMultiplierOverride": 1.75
+          },
+          {
+            "id": "event_mystery_monday_phase_3",
+            "title": "Climax da Temporada",
+            "description": "Última etapa: conclua para liberar o bônus máximo do evento.",
+            "requirements": {
+              "minCombos": 8,
+              "linesCleared": 90,
+              "perfectClears": 2,
+              "timeLimitSeconds": 240
+            },
+            "reward": "+1 boost de moedas (2x por 6h)",
+            "coinMultiplierOverride": 2.0,
+            "mutationOverride": "MYSTERY_REWARDS"
+          }
+        ]
+      }
     }
   ],
   "ab": {
