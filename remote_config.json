@@ -45,6 +45,52 @@
     ]
   },
   "ui": {
+    "dailyEventPanel": {
+      "title": "Evento Diário",
+      "statusLabel": {
+        "active": "Ativo",
+        "inactive": "Inativo"
+      },
+      "stateMessage": {
+        "autoActive": "Evento diário ativo automaticamente hoje",
+        "progress": "Progresso do Evento Diário: X / 5000 pontos"
+      },
+      "duration": {
+        "label": "Duração",
+        "value": "24 horas"
+      },
+      "milestones": {
+        "title": "Metas",
+        "progressBarLabel": "Progresso",
+        "maxPoints": 5000,
+        "allOrNothingNotice": "Recompensa única ao atingir 5000 pts",
+        "statusLabels": {
+          "current": "Atual",
+          "completed": "Concluído"
+        },
+        "entries": [
+          { "points": 1000, "reward": "+150 moedas" },
+          { "points": 2500, "reward": "+1 caixa comum" },
+          { "points": 5000, "reward": "+1 boost de moedas (2x por 12h)" }
+        ]
+      },
+      "howItWorks": {
+        "title": "Como funciona",
+        "bullets": [
+          "Ativo automaticamente",
+          "Acumule pontos jogando",
+          "Recompensas ao atingir marcos"
+        ]
+      },
+      "rewards": {
+        "title": "Recompensas",
+        "milestones": [
+          { "points": 1000, "reward": "+150 moedas" },
+          { "points": 2500, "reward": "+1 caixa comum" },
+          { "points": 5000, "reward": "+1 boost de moedas (2x por 12h)" }
+        ]
+      }
+    },
     "weeklyEventPanel": {
       "title": "Evento Semanal",
       "statusLabel": {
@@ -52,11 +98,15 @@
         "inactive": "Inativo"
       },
       "stateMessage": {
-        "autoActive": "Evento Ativo automaticamente nesta semana",
+        "autoActive": "Evento semanal ativo automaticamente nesta semana",
         "progress": "Progresso do Evento Semanal: X / 5000 pontos"
       },
+      "duration": {
+        "label": "Duração",
+        "value": "7 dias"
+      },
       "milestones": {
-        "title": "Marcos",
+        "title": "Metas",
         "progressBarLabel": "Progresso",
         "maxPoints": 5000,
         "allOrNothingNotice": "Recompensa única ao atingir 5000 pts",
@@ -70,8 +120,13 @@
           { "points": 5000, "reward": "+1 boost de moedas (2x por 24h)" }
         ]
       },
-      "cta": {
-        "activate": "Ativar evento semanal (requer 5000 pts)"
+      "howItWorks": {
+        "title": "Como funciona",
+        "bullets": [
+          "Ativo automaticamente",
+          "Acumule pontos jogando",
+          "Recompensas ao atingir marcos"
+        ]
       },
       "rewards": {
         "title": "Recompensas",
