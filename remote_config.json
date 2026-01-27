@@ -47,12 +47,16 @@
   "ui": {
     "dailyEventPanel": {
       "title": "Evento Diário",
+      "primaryCta": "Jogar agora para ganhar pontos",
+      "estimatedPointsPerMatch": "~200 pts por jogo",
+      "pointsHint": "Pontue em [modo X] para somar pontos do evento",
       "statusLabel": {
         "active": "Ativo",
         "inactive": "Inativo"
       },
       "stateMessage": {
         "autoActive": "Evento diário ativo automaticamente hoje",
+        "autoAccumulating": "Ativo hoje — acumulando automaticamente",
         "progress": "Progresso do Evento Diário: X / 5000 pontos"
       },
       "duration": {
@@ -93,12 +97,16 @@
     },
     "weeklyEventPanel": {
       "title": "Evento Semanal",
+      "primaryCta": "Jogar agora para ganhar pontos",
+      "estimatedPointsPerMatch": "~200 pts por jogo",
+      "pointsHint": "Pontue em [modo X] para somar pontos do evento",
       "statusLabel": {
         "active": "Ativo",
         "inactive": "Inativo"
       },
       "stateMessage": {
         "autoActive": "Evento semanal ativo automaticamente nesta semana",
+        "autoAccumulating": "Ativo nesta semana — acumulando automaticamente",
         "progress": "Progresso do Evento Semanal: X / 5000 pontos"
       },
       "duration": {
