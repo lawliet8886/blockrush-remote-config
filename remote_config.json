@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "minSupportedVersion": 1,
   "features": {
     "cleanHudDefault": true,
@@ -55,6 +55,21 @@
         "autoActive": "Evento Ativo automaticamente nesta semana",
         "progress": "Progresso do Evento Semanal: X / 5000 pontos"
       },
+      "milestones": {
+        "title": "Marcos",
+        "progressBarLabel": "Progresso",
+        "maxPoints": 5000,
+        "allOrNothingNotice": "Recompensa única ao atingir 5000 pts",
+        "statusLabels": {
+          "current": "Atual",
+          "completed": "Concluído"
+        },
+        "entries": [
+          { "points": 1000, "reward": "+250 moedas" },
+          { "points": 2500, "reward": "+1 caixa rara" },
+          { "points": 5000, "reward": "+1 boost de moedas (2x por 24h)" }
+        ]
+      },
       "cta": {
         "activate": "Ativar evento semanal (requer 5000 pts)"
       },
@@ -63,7 +78,6 @@
         "milestones": [
           { "points": 1000, "reward": "+250 moedas" },
           { "points": 2500, "reward": "+1 caixa rara" },
-          { "points": 4000, "reward": "+1 skin temática" },
           { "points": 5000, "reward": "+1 boost de moedas (2x por 24h)" }
         ]
       }
