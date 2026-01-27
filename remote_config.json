@@ -44,6 +44,94 @@
       { "id": "weekly_giant", "name": "Go Big or Go Home", "type": "BIG_PIECES", "weight": 1 }
     ]
   },
+  "dailyChallenges": {
+    "bonusUnlockPhaseId": "daily_phase_3",
+    "phases": [
+      {
+        "id": "daily_phase_1",
+        "title": "Aquecimento Relâmpago",
+        "description": "Entre no ritmo com objetivos rápidos e consistentes.",
+        "requirements": {
+          "minCombos": 6,
+          "linesCleared": 30,
+          "maxErrors": 1
+        },
+        "reward": "+150 moedas"
+      },
+      {
+        "id": "daily_phase_2",
+        "title": "Precisão em Série",
+        "description": "Mostre controle total com clears perfeitos e rapidez.",
+        "requirements": {
+          "perfectClears": 2,
+          "timeLimitSeconds": 180,
+          "minCombos": 8
+        },
+        "reward": "+1 caixa comum"
+      },
+      {
+        "id": "daily_phase_3",
+        "title": "Sprint Final",
+        "description": "Conclusão intensa para liberar o bônus do dia.",
+        "requirements": {
+          "linesCleared": 60,
+          "minCombos": 10,
+          "maxErrors": 0
+        },
+        "reward": "+1 boost de moedas (2x por 12h)"
+      }
+    ]
+  },
+  "weeklyChallenges": {
+    "bonusUnlockPhaseId": "weekly_phase_4",
+    "phases": [
+      {
+        "id": "weekly_phase_1",
+        "title": "Ritmo de Abertura",
+        "description": "Construa a base com metas de consistência ao longo da semana.",
+        "requirements": {
+          "minCombos": 12,
+          "linesCleared": 150,
+          "maxErrors": 3
+        },
+        "reward": "+250 moedas"
+      },
+      {
+        "id": "weekly_phase_2",
+        "title": "Resistência",
+        "description": "Aumente a dificuldade com tempo limite e clears sem erro.",
+        "requirements": {
+          "timeLimitSeconds": 420,
+          "perfectClears": 3,
+          "minCombos": 14
+        },
+        "reward": "+1 caixa rara"
+      },
+      {
+        "id": "weekly_phase_3",
+        "title": "Corrida de Linhas",
+        "description": "Empilhe clears e mantenha a sequência para chegar à final.",
+        "requirements": {
+          "linesCleared": 260,
+          "minCombos": 16,
+          "maxErrors": 1
+        },
+        "reward": "+1 boost de moedas (2x por 12h)"
+      },
+      {
+        "id": "weekly_phase_4",
+        "title": "Clímax da Semana",
+        "description": "Fase decisiva que libera o bônus maior.",
+        "requirements": {
+          "perfectClears": 5,
+          "linesCleared": 320,
+          "minCombos": 18,
+          "maxErrors": 0
+        },
+        "reward": "+1 boost de moedas (2x por 24h)"
+      }
+    ]
+  },
   "ui": {
     "dailyEventPanel": {
       "title": "Evento Diário",
@@ -55,43 +143,43 @@
         "inactive": "Inativo"
       },
       "stateMessage": {
-        "autoActive": "Evento diário ativo automaticamente hoje",
-        "autoAccumulating": "Ativo hoje — acumulando automaticamente",
-        "progress": "Progresso do Evento Diário: X / 5000 pontos"
+        "currentPhase": "Fase atual: {phaseTitle}",
+        "remainingChallenges": "Faltam X desafios para concluir a fase",
+        "nextPhaseUnlocked": "Próxima fase desbloqueada!"
       },
       "duration": {
         "label": "Duração",
         "value": "24 horas"
       },
       "milestones": {
-        "title": "Metas",
-        "progressBarLabel": "Progresso",
-        "maxPoints": 5000,
-        "allOrNothingNotice": "Recompensa única ao atingir 5000 pts",
+        "title": "Fases do Desafio",
+        "progressBarLabel": "Progresso da fase",
+        "maxPhases": 3,
+        "allOrNothingNotice": "Bônus liberado somente ao concluir a última fase",
         "statusLabels": {
           "current": "Atual",
           "completed": "Concluído"
         },
         "entries": [
-          { "points": 1000, "reward": "+150 moedas" },
-          { "points": 2500, "reward": "+1 caixa comum" },
-          { "points": 5000, "reward": "+1 boost de moedas (2x por 12h)" }
+          { "phaseId": "daily_phase_1", "title": "Aquecimento Relâmpago", "reward": "+150 moedas" },
+          { "phaseId": "daily_phase_2", "title": "Precisão em Série", "reward": "+1 caixa comum" },
+          { "phaseId": "daily_phase_3", "title": "Sprint Final", "reward": "+1 boost de moedas (2x por 12h)" }
         ]
       },
       "howItWorks": {
         "title": "Como funciona",
         "bullets": [
-          "Ativo automaticamente",
-          "Acumule pontos jogando",
-          "Recompensas ao atingir marcos"
+          "Complete desafios para avançar de fase",
+          "Acompanhe a fase atual e o progresso",
+          "O bônus só libera ao concluir a última fase"
         ]
       },
       "rewards": {
         "title": "Recompensas",
         "milestones": [
-          { "points": 1000, "reward": "+150 moedas" },
-          { "points": 2500, "reward": "+1 caixa comum" },
-          { "points": 5000, "reward": "+1 boost de moedas (2x por 12h)" }
+          { "phaseId": "daily_phase_1", "reward": "+150 moedas" },
+          { "phaseId": "daily_phase_2", "reward": "+1 caixa comum" },
+          { "phaseId": "daily_phase_3", "reward": "+1 boost de moedas (2x por 12h)" }
         ]
       }
     },
@@ -105,43 +193,45 @@
         "inactive": "Inativo"
       },
       "stateMessage": {
-        "autoActive": "Evento semanal ativo automaticamente nesta semana",
-        "autoAccumulating": "Ativo nesta semana — acumulando automaticamente",
-        "progress": "Progresso do Evento Semanal: X / 5000 pontos"
+        "currentPhase": "Fase atual: {phaseTitle}",
+        "remainingChallenges": "Faltam X desafios para concluir a fase",
+        "nextPhaseUnlocked": "Próxima fase desbloqueada!"
       },
       "duration": {
         "label": "Duração",
         "value": "7 dias"
       },
       "milestones": {
-        "title": "Metas",
-        "progressBarLabel": "Progresso",
-        "maxPoints": 5000,
-        "allOrNothingNotice": "Recompensa única ao atingir 5000 pts",
+        "title": "Fases do Desafio",
+        "progressBarLabel": "Progresso da fase",
+        "maxPhases": 4,
+        "allOrNothingNotice": "Bônus liberado somente ao concluir a última fase",
         "statusLabels": {
           "current": "Atual",
           "completed": "Concluído"
         },
         "entries": [
-          { "points": 1000, "reward": "+250 moedas" },
-          { "points": 2500, "reward": "+1 caixa rara" },
-          { "points": 5000, "reward": "+1 boost de moedas (2x por 24h)" }
+          { "phaseId": "weekly_phase_1", "title": "Ritmo de Abertura", "reward": "+250 moedas" },
+          { "phaseId": "weekly_phase_2", "title": "Resistência", "reward": "+1 caixa rara" },
+          { "phaseId": "weekly_phase_3", "title": "Corrida de Linhas", "reward": "+1 boost de moedas (2x por 12h)" },
+          { "phaseId": "weekly_phase_4", "title": "Clímax da Semana", "reward": "+1 boost de moedas (2x por 24h)" }
         ]
       },
       "howItWorks": {
         "title": "Como funciona",
         "bullets": [
-          "Ativo automaticamente",
-          "Acumule pontos jogando",
-          "Recompensas ao atingir marcos"
+          "Complete desafios para avançar de fase",
+          "Veja quantos desafios faltam",
+          "A próxima fase desbloqueia ao finalizar a atual"
         ]
       },
       "rewards": {
         "title": "Recompensas",
         "milestones": [
-          { "points": 1000, "reward": "+250 moedas" },
-          { "points": 2500, "reward": "+1 caixa rara" },
-          { "points": 5000, "reward": "+1 boost de moedas (2x por 24h)" }
+          { "phaseId": "weekly_phase_1", "reward": "+250 moedas" },
+          { "phaseId": "weekly_phase_2", "reward": "+1 caixa rara" },
+          { "phaseId": "weekly_phase_3", "reward": "+1 boost de moedas (2x por 12h)" },
+          { "phaseId": "weekly_phase_4", "reward": "+1 boost de moedas (2x por 24h)" }
         ]
       }
     }
