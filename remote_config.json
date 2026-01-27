@@ -50,33 +50,34 @@
       {
         "id": "daily_phase_1",
         "title": "Aquecimento Relâmpago",
-        "description": "Entre no ritmo com objetivos rápidos e consistentes.",
+        "description": "Abra a sequência com metas leves e consistentes.",
         "requirements": {
-          "minCombos": 6,
-          "linesCleared": 30,
-          "maxErrors": 1
+          "minCombos": 3,
+          "linesCleared": 20,
+          "maxErrors": 2
         },
         "reward": "+150 moedas"
       },
       {
         "id": "daily_phase_2",
         "title": "Precisão em Série",
-        "description": "Mostre controle total com clears perfeitos e rapidez.",
+        "description": "Eleve a exigência com combos maiores e clears perfeitos.",
         "requirements": {
           "perfectClears": 2,
-          "timeLimitSeconds": 180,
-          "minCombos": 8
+          "timeLimitSeconds": 240,
+          "minCombos": 5
         },
         "reward": "+1 caixa comum"
       },
       {
         "id": "daily_phase_3",
         "title": "Sprint Final",
-        "description": "Conclusão intensa para liberar o bônus do dia.",
+        "description": "Etapa final e mais difícil para liberar o bônus principal.",
         "requirements": {
           "linesCleared": 60,
-          "minCombos": 10,
-          "maxErrors": 0
+          "minCombos": 7,
+          "maxErrors": 0,
+          "timeLimitSeconds": 180
         },
         "reward": "+1 boost de moedas (2x por 12h)"
       }
@@ -88,45 +89,46 @@
       {
         "id": "weekly_phase_1",
         "title": "Ritmo de Abertura",
-        "description": "Construa a base com metas de consistência ao longo da semana.",
+        "description": "Comece a cadeia com metas acessíveis e progressivas.",
         "requirements": {
-          "minCombos": 12,
-          "linesCleared": 150,
-          "maxErrors": 3
+          "minCombos": 8,
+          "linesCleared": 120,
+          "maxErrors": 4
         },
         "reward": "+250 moedas"
       },
       {
         "id": "weekly_phase_2",
         "title": "Resistência",
-        "description": "Aumente a dificuldade com tempo limite e clears sem erro.",
+        "description": "Suba o nível com tempo limite e clears perfeitos.",
         "requirements": {
-          "timeLimitSeconds": 420,
-          "perfectClears": 3,
-          "minCombos": 14
+          "timeLimitSeconds": 540,
+          "perfectClears": 2,
+          "minCombos": 12
         },
         "reward": "+1 caixa rara"
       },
       {
         "id": "weekly_phase_3",
         "title": "Corrida de Linhas",
-        "description": "Empilhe clears e mantenha a sequência para chegar à final.",
+        "description": "Acelere o volume de clears para chegar à fase final.",
         "requirements": {
-          "linesCleared": 260,
-          "minCombos": 16,
+          "linesCleared": 240,
+          "minCombos": 14,
           "maxErrors": 1
         },
-        "reward": "+1 boost de moedas (2x por 12h)"
+        "reward": "+400 moedas"
       },
       {
         "id": "weekly_phase_4",
         "title": "Clímax da Semana",
-        "description": "Fase decisiva que libera o bônus maior.",
+        "description": "Fase decisiva e mais exigente para liberar o bônus principal.",
         "requirements": {
           "perfectClears": 5,
-          "linesCleared": 320,
-          "minCombos": 18,
-          "maxErrors": 0
+          "linesCleared": 300,
+          "minCombos": 16,
+          "maxErrors": 0,
+          "timeLimitSeconds": 480
         },
         "reward": "+1 boost de moedas (2x por 24h)"
       }
@@ -134,28 +136,28 @@
   },
   "ui": {
     "dailyEventPanel": {
-      "title": "Evento Diário",
-      "primaryCta": "Jogar agora para ganhar pontos",
+      "title": "Evento Diário - Fases Progressivas",
+      "primaryCta": "Jogar agora para avançar de fase",
       "estimatedPointsPerMatch": "~200 pts por jogo",
-      "pointsHint": "Pontue em [modo X] para somar pontos do evento",
+      "pointsHint": "Complete fases em sequência para avançar no evento",
       "statusLabel": {
         "active": "Ativo",
         "inactive": "Inativo"
       },
       "stateMessage": {
-        "currentPhase": "Fase atual: {phaseTitle}",
-        "remainingChallenges": "Faltam X desafios para concluir a fase",
-        "nextPhaseUnlocked": "Próxima fase desbloqueada!"
+        "currentPhase": "Fase atual (progressiva): {phaseTitle}",
+        "remainingChallenges": "Faltam X desafios para concluir esta fase",
+        "nextPhaseUnlocked": "Próxima fase desbloqueada — continue a sequência!"
       },
       "duration": {
         "label": "Duração",
         "value": "24 horas"
       },
       "milestones": {
-        "title": "Fases do Desafio",
-        "progressBarLabel": "Progresso da fase",
+        "title": "Fases Progressivas",
+        "progressBarLabel": "Progresso da fase atual",
         "maxPhases": 3,
-        "allOrNothingNotice": "Bônus liberado somente ao concluir a última fase",
+        "allOrNothingNotice": "Bônus principal liberado somente ao concluir a última fase",
         "statusLabels": {
           "current": "Atual",
           "completed": "Concluído"
@@ -169,13 +171,13 @@
       "howItWorks": {
         "title": "Como funciona",
         "bullets": [
-          "Complete desafios para avançar de fase",
-          "Acompanhe a fase atual e o progresso",
-          "O bônus só libera ao concluir a última fase"
+          "As fases são sequenciais e ficam mais difíceis",
+          "Conclua a fase atual para desbloquear a próxima",
+          "O bônus principal só libera ao finalizar a última fase"
         ]
       },
       "rewards": {
-        "title": "Recompensas",
+        "title": "Recompensas por fase",
         "milestones": [
           { "phaseId": "daily_phase_1", "reward": "+150 moedas" },
           { "phaseId": "daily_phase_2", "reward": "+1 caixa comum" },
@@ -184,28 +186,28 @@
       }
     },
     "weeklyEventPanel": {
-      "title": "Evento Semanal",
-      "primaryCta": "Jogar agora para ganhar pontos",
+      "title": "Evento Semanal - Fases Progressivas",
+      "primaryCta": "Jogar agora para avançar de fase",
       "estimatedPointsPerMatch": "~200 pts por jogo",
-      "pointsHint": "Pontue em [modo X] para somar pontos do evento",
+      "pointsHint": "Complete fases em sequência para avançar no evento",
       "statusLabel": {
         "active": "Ativo",
         "inactive": "Inativo"
       },
       "stateMessage": {
-        "currentPhase": "Fase atual: {phaseTitle}",
-        "remainingChallenges": "Faltam X desafios para concluir a fase",
-        "nextPhaseUnlocked": "Próxima fase desbloqueada!"
+        "currentPhase": "Fase atual (progressiva): {phaseTitle}",
+        "remainingChallenges": "Faltam X desafios para concluir esta fase",
+        "nextPhaseUnlocked": "Próxima fase desbloqueada — continue a sequência!"
       },
       "duration": {
         "label": "Duração",
         "value": "7 dias"
       },
       "milestones": {
-        "title": "Fases do Desafio",
-        "progressBarLabel": "Progresso da fase",
+        "title": "Fases Progressivas",
+        "progressBarLabel": "Progresso da fase atual",
         "maxPhases": 4,
-        "allOrNothingNotice": "Bônus liberado somente ao concluir a última fase",
+        "allOrNothingNotice": "Bônus principal liberado somente ao concluir a última fase",
         "statusLabels": {
           "current": "Atual",
           "completed": "Concluído"
@@ -213,24 +215,24 @@
         "entries": [
           { "phaseId": "weekly_phase_1", "title": "Ritmo de Abertura", "reward": "+250 moedas" },
           { "phaseId": "weekly_phase_2", "title": "Resistência", "reward": "+1 caixa rara" },
-          { "phaseId": "weekly_phase_3", "title": "Corrida de Linhas", "reward": "+1 boost de moedas (2x por 12h)" },
+          { "phaseId": "weekly_phase_3", "title": "Corrida de Linhas", "reward": "+400 moedas" },
           { "phaseId": "weekly_phase_4", "title": "Clímax da Semana", "reward": "+1 boost de moedas (2x por 24h)" }
         ]
       },
       "howItWorks": {
         "title": "Como funciona",
         "bullets": [
-          "Complete desafios para avançar de fase",
-          "Veja quantos desafios faltam",
-          "A próxima fase desbloqueia ao finalizar a atual"
+          "As fases são sequenciais e ficam mais difíceis",
+          "Finalize a fase atual para desbloquear a próxima",
+          "O bônus principal só libera ao concluir a última fase"
         ]
       },
       "rewards": {
-        "title": "Recompensas",
+        "title": "Recompensas por fase",
         "milestones": [
           { "phaseId": "weekly_phase_1", "reward": "+250 moedas" },
           { "phaseId": "weekly_phase_2", "reward": "+1 caixa rara" },
-          { "phaseId": "weekly_phase_3", "reward": "+1 boost de moedas (2x por 12h)" },
+          { "phaseId": "weekly_phase_3", "reward": "+400 moedas" },
           { "phaseId": "weekly_phase_4", "reward": "+1 boost de moedas (2x por 24h)" }
         ]
       }
