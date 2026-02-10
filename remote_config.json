@@ -1,893 +1,665 @@
 {
-    "version":  4,
-    "minSupportedVersion":  1,
-    "features":  {
-                     "cleanHudDefault":  true,
-                     "enableDaily":  true,
-                     "enableOverlord":  true
-                 },
-    "balance":  {
-                    "comboGain":  0.15,
-                    "comboDecay":  0.005,
-                    "bossEveryClears":  15,
-                    "bossCriticalAlsoTriggers":  true,
-                    "dailyBaseTarget":  5000,
-                    "dailyStreakStep":  500,
-                    "assistMockAdSecondsStrong":  30,
-                    "assistMockAdSecondsStrongDebug":  2,
-                    "assistStrongMaxPerRun":  2,
-                    "assistStrongCooldownMinutes":  10,
-                    "assistHintFreePerRun":  1,
-                    "assistReshuffleCostCoins":  120,
-                    "assistReshuffleFreePerRun":  0,
-                    "assistShowGlowOnIdleSeconds":  18,
-                    "assistShowGlowOnCritical":  true
-                },
-    "drops":  {
-                  "tokenPerfectChance":  0.05,
-                  "riftWClearsStep":  50,
-                  "riftWChance":  0.12
-              },
-    "shop":  {
-                 "featuredSkinsDailyCount":  3,
-                 "featuredRotationSeed":  "2026-01",
-                 "bundleDiscountPct":  20
-             },
-    "weekly":  {
-                   "rotationSeed":  "2026-01",
-                   "entries":  [
-                                   {
-                                       "id":  "weekly_columns",
-                                       "name":  "Column Master",
-                                       "type":  "COLUMNS_25",
-                                       "weight":  1
-                                   },
-                                   {
-                                       "id":  "weekly_small",
-                                       "name":  "Tiny Titans",
-                                       "type":  "SMALL_PIECES",
-                                       "weight":  1
-                                   },
-                                   {
-                                       "id":  "weekly_combo",
-                                       "name":  "Combo Frenzy",
-                                       "type":  "COMBO_PLUS_ONE",
-                                       "weight":  1
-                                   },
-                                   {
-                                       "id":  "weekly_blockers",
-                                       "name":  "Obstacle Course",
-                                       "type":  "START_BLOCKERS",
-                                       "weight":  1
-                                   },
-                                   {
-                                       "id":  "weekly_speed",
-                                       "name":  "Speed Demon",
-                                       "type":  "FAST_DECAY",
-                                       "weight":  1
-                                   },
-                                   {
-                                       "id":  "weekly_giant",
-                                       "name":  "Go Big or Go Home",
-                                       "type":  "BIG_PIECES",
-                                       "weight":  1
-                                   }
-                               ]
-               },
-    "events":  [
-                   {
-                       "id":  "event_lunar_new_year_2026",
-                       "i18nKey":  "event.lunar_new_year",
-                       "shortLabel":  "Lunar New Year",
-                       "startKey":  "20260129",
-                       "endKey":  "20260212",
-                       "name":  "ðŸ´ Lunar New Year",
-                       "description":  "Year of the Horse! Gallop to victory with 2x coins!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FF0000",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#FF4500"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "boss_frequency",
-                                                       "value":  12,
-                                                       "label":  "More bosses (every 12 clears)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "bossFreqOverride":  12,
-                       "priority":  80,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_valentines_2026",
-                       "i18nKey":  "event.valentines",
-                       "shortLabel":  "Valentine\u0027s Rush",
-                       "startKey":  "20260210",
-                       "endKey":  "20260216",
-                       "name":  "ðŸ’• Valentine\u0027s Rush",
-                       "description":  "Love is in the blocks! Heart-shaped combos give bonus points!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FF69B4",
-                                       "accent":  "#FF1493",
-                                       "glow":  "#FFB6C1"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "score",
-                                                       "multiplier":  1.2,
-                                                       "label":  "Combo score bonus (~+20%)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  60,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_carnival_2026",
-                       "i18nKey":  "event.carnival",
-                       "shortLabel":  "Carnival Chaos",
-                       "startKey":  "20260213",
-                       "endKey":  "20260218",
-                       "name":  "ðŸŽ­ Carnival Chaos",
-                       "description":  "Samba your way through colorful blocks! Random bonuses every clear!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FFD700",
-                                       "accent":  "#00FF00",
-                                       "glow":  "#FF00FF"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.75,
-                                                       "label":  "1.75x coins"
-                                                   },
-                                                   {
-                                                       "type":  "modifier",
-                                                       "id":  "RANDOM_BONUS",
-                                                       "label":  "Random bonus per clear"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.75,
-                       "mutationOverride":  "RANDOM_BONUS",
-                       "priority":  55,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_st_patrick_2026",
-                       "i18nKey":  "event.st_patrick",
-                       "shortLabel":  "Lucky Blocks",
-                       "startKey":  "20260314",
-                       "endKey":  "20260320",
-                       "name":  "ðŸ€ Lucky Blocks",
-                       "description":  "Find the pot of gold! Every 4-combo has a chance to drop bonus coins!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#00FF00",
-                                       "accent":  "#228B22",
-                                       "glow":  "#32CD32"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "bonus_drop",
-                                                       "label":  "Chance for extra coin drop on 4+ combos"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  50,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_easter_2026",
-                       "i18nKey":  "event.easter",
-                       "shortLabel":  "Easter Egg Hunt",
-                       "startKey":  "20260403",
-                       "endKey":  "20260407",
-                       "name":  "ðŸ° Easter Egg Hunt",
-                       "description":  "Hidden eggs on the board! Clear them for mystery rewards!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#E6E6FA",
-                                       "accent":  "#FFB347",
-                                       "glow":  "#87CEEB"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "loot",
-                                                       "label":  "Mystery item drops (cosmetics or coins)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  50,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_april_fools_2026",
-                       "i18nKey":  "event.april_fools",
-                       "shortLabel":  "April Fools Mayhem",
-                       "startKey":  "20260401",
-                       "endKey":  "20260402",
-                       "name":  "ðŸƒ April Fools Mayhem",
-                       "description":  "Expect the unexpected! Pieces might not be what they seem...",
-                       "category":  "flash",
-                       "palette":  {
-                                       "primary":  "#FF00FF",
-                                       "accent":  "#00FFFF",
-                                       "glow":  "#FFFF00"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "modifier",
-                                                       "id":  "CHAOS_MODE",
-                                                       "label":  "Chaos Mode (surprise mechanics)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "mutationOverride":  "CHAOS_MODE",
-                       "priority":  90,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_earth_day_2026",
-                       "i18nKey":  "event.earth_day",
-                       "shortLabel":  "Earth Day",
-                       "startKey":  "20260422",
-                       "endKey":  "20260424",
-                       "name":  "ðŸŒ Earth Day",
-                       "description":  "Go green! Nature-themed blocks and eco rewards!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#228B22",
-                                       "accent":  "#8B4513",
-                                       "glow":  "#90EE90"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "cosmetic_token",
-                                                       "amount":  1,
-                                                       "label":  "Eco cosmetic token"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  45,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_cinco_de_mayo_2026",
-                       "i18nKey":  "event.cinco_de_mayo",
-                       "shortLabel":  "Cinco Fiesta",
-                       "startKey":  "20260505",
-                       "endKey":  "20260507",
-                       "name":  "ðŸŒ® Cinco de Mayo Fiesta",
-                       "description":  "Arriba! Spicy combos and explosive clears!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FF4500",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#00FF00"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.75,
-                                                       "label":  "1.75x coins"
-                                                   },
-                                                   {
-                                                       "type":  "effect",
-                                                       "label":  "Explosive clear visual + small bonus"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.75,
-                       "priority":  40,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_summer_solstice_2026",
-                       "i18nKey":  "event.summer_solstice",
-                       "shortLabel":  "Summer Solstice",
-                       "startKey":  "20260620",
-                       "endKey":  "20260626",
-                       "name":  "â˜€ï¸ Summer Solstice",
-                       "description":  "The longest day! Marathon runs with solar-powered bonuses!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FFD700",
-                                       "accent":  "#FF8C00",
-                                       "glow":  "#FFFF00"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "stamina_bonus",
-                                                       "label":  "Marathon bonus (longer runs rewarded)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  35,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_independence_2026",
-                       "i18nKey":  "event.independence",
-                       "shortLabel":  "Fireworks Festival",
-                       "startKey":  "20260704",
-                       "endKey":  "20260706",
-                       "name":  "ðŸŽ† Fireworks Festival",
-                       "description":  "Explosive clears! Every line clear triggers fireworks!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FF0000",
-                                       "accent":  "#0000FF",
-                                       "glow":  "#FFFFFF"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "visual_effect",
-                                                       "label":  "Fireworks on clear"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "priority":  60,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_beach_party_2026",
-                       "i18nKey":  "event.beach_party",
-                       "shortLabel":  "Beach Party",
-                       "startKey":  "20260715",
-                       "endKey":  "20260731",
-                       "name":  "ðŸ–ï¸ Beach Party",
-                       "description":  "Surf\u0027s up! Ride the wave of combos all month long!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#00CED1",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#87CEEB"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.25,
-                                                       "label":  "1.25x coins"
-                                                   },
-                                                   {
-                                                       "type":  "cosmetic_chance",
-                                                       "label":  "Chance for beach-themed cosmetics"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.25,
-                       "priority":  30,
-                       "stackable":  true
-                   },
-                   {
-                       "id":  "event_back_to_school_2026",
-                       "i18nKey":  "event.back_to_school",
-                       "shortLabel":  "Back to School",
-                       "startKey":  "20260825",
-                       "endKey":  "20260831",
-                       "name":  "ðŸ“š Back to School",
-                       "description":  "Study hard! XP bonus for strategic plays!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#4169E1",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#FF6347"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "xp",
-                                                       "multiplier":  1.2,
-                                                       "label":  "XP bonus (~+20%)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  25,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_oktoberfest_2026",
-                       "i18nKey":  "event.oktoberfest",
-                       "shortLabel":  "Oktoberfest",
-                       "startKey":  "20260919",
-                       "endKey":  "20261004",
-                       "name":  "ðŸº Oktoberfest",
-                       "description":  "Prost! Celebrate with golden combos and frothy rewards!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#DAA520",
-                                       "accent":  "#8B4513",
-                                       "glow":  "#FFD700"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "bonus",
-                                                       "label":  "Golden combo bonuses"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  25,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_halloween_2026",
-                       "i18nKey":  "event.halloween",
-                       "shortLabel":  "Spooky Season",
-                       "startKey":  "20261025",
-                       "endKey":  "20261031",
-                       "name":  "ðŸŽƒ Spooky Season",
-                       "description":  "Ghosts in the grid! Beware of cursed blocks... or embrace them!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FF6600",
-                                       "accent":  "#8B00FF",
-                                       "glow":  "#00FF00"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "boss_frequency",
-                                                       "value":  10,
-                                                       "label":  "More frequent bosses (every 10 clears)"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "bossFreqOverride":  10,
-                       "priority":  70,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_dia_de_muertos_2026",
-                       "i18nKey":  "event.dia_de_muertos",
-                       "shortLabel":  "DÃ­a de los Muertos",
-                       "startKey":  "20261101",
-                       "endKey":  "20261102",
-                       "name":  "ðŸ’€ DÃ­a de los Muertos",
-                       "description":  "Honor the spirits! Sugar skull blocks bring sweet rewards!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#FF1493",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#00FFFF"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "cosmetic",
-                                                       "label":  "Sugar skull cosmetic drops"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "priority":  65,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_thanksgiving_2026",
-                       "i18nKey":  "event.thanksgiving",
-                       "shortLabel":  "Thanksgiving Feast",
-                       "startKey":  "20261126",
-                       "endKey":  "20261129",
-                       "name":  "ðŸ¦ƒ Thanksgiving Feast",
-                       "description":  "Gobble up those combos! Harvest bonus coins!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#D2691E",
-                                       "accent":  "#FF4500",
-                                       "glow":  "#FFD700"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.75,
-                                                       "label":  "1.75x coins"
-                                                   },
-                                                   {
-                                                       "type":  "bundle_offer",
-                                                       "label":  "Limited cosmetic bundles"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.75,
-                       "priority":  50,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_black_friday_2026",
-                       "i18nKey":  "event.black_friday",
-                       "shortLabel":  "Black Friday",
-                       "startKey":  "20261127",
-                       "endKey":  "20261130",
-                       "name":  "ðŸ›’ Black Friday Bonanza",
-                       "description":  "Shop \u0027til you drop! Massive discounts in the cosmetic shop!",
-                       "category":  "flash",
-                       "palette":  {
-                                       "primary":  "#000000",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#FF0000"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "shop_discount",
-                                                       "valuePct":  30,
-                                                       "label":  "Up to 30% off cosmetics"
-                                                   },
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  95,
-                       "stackable":  true
-                   },
-                   {
-                       "id":  "event_winter_holidays_2026",
-                       "i18nKey":  "event.winter_holidays",
-                       "shortLabel":  "Winter Wonderland",
-                       "startKey":  "20261220",
-                       "endKey":  "20261231",
-                       "name":  "â„ï¸ Winter Wonderland",
-                       "description":  "Let it snow! Daily gifts and frozen surprises await!",
-                       "category":  "seasonal",
-                       "palette":  {
-                                       "primary":  "#ADD8E6",
-                                       "accent":  "#FFFFFF",
-                                       "glow":  "#00BFFF"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "daily_gift",
-                                                       "count":  1,
-                                                       "label":  "Daily gift (example: 1 token)"
-                                                   },
-                                                   {
-                                                       "type":  "boss_frequency",
-                                                       "value":  10,
-                                                       "label":  "More frequent bosses"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "bossFreqOverride":  10,
-                       "priority":  85,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_new_years_eve_2026",
-                       "i18nKey":  "event.new_years_eve",
-                       "shortLabel":  "New Year\u0027s Countdown",
-                       "startKey":  "20261231",
-                       "endKey":  "20270101",
-                       "name":  "ðŸŽ‰ New Year\u0027s Countdown",
-                       "description":  "3... 2... 1... HAPPY NEW YEAR! Triple coins at midnight!",
-                       "category":  "flash",
-                       "palette":  {
-                                       "primary":  "#FFD700",
-                                       "accent":  "#C0C0C0",
-                                       "glow":  "#FFFFFF"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  3.0,
-                                                       "label":  "3x coins at midnight"
-                                                   },
-                                                   {
-                                                       "type":  "time_limited",
-                                                       "label":  "Midnight-only triple coins"
-                                                   }
-                                               ],
-                       "coinMultiplier":  3.0,
-                       "priority":  99,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_weekly_boss_rush",
-                       "i18nKey":  "event.weekly_boss_rush",
-                       "shortLabel":  "Boss Rush",
-                       "startKey":  "20260201",
-                       "endKey":  "20260202",
-                       "name":  "ðŸ‘¾ Boss Rush Weekend",
-                       "description":  "Non-stop boss battles! Can you survive the onslaught?",
-                       "category":  "weekend",
-                       "palette":  {
-                                       "primary":  "#8B0000",
-                                       "accent":  "#FF4500",
-                                       "glow":  "#FF0000"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "boss_frequency",
-                                                       "value":  5,
-                                                       "label":  "Boss every 5 clears"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "bossFreqOverride":  5,
-                       "priority":  70,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_combo_challenge",
-                       "i18nKey":  "event.combo_challenge",
-                       "shortLabel":  "Combo Challenge",
-                       "startKey":  "20260215",
-                       "endKey":  "20260216",
-                       "name":  "âš¡ Combo Challenge",
-                       "description":  "Chain reaction! How high can you combo?",
-                       "category":  "weekend",
-                       "palette":  {
-                                       "primary":  "#00FFFF",
-                                       "accent":  "#FF00FF",
-                                       "glow":  "#FFFF00"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "combo_bonus",
-                                                       "label":  "Extra rewards for long combos"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "priority":  50,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_speed_run",
-                       "i18nKey":  "event.speed_run",
-                       "shortLabel":  "Speed Run",
-                       "startKey":  "20260301",
-                       "endKey":  "20260302",
-                       "name":  "ðŸƒ Speed Run Showdown",
-                       "description":  "Race against time! Fastest clears get legendary rewards!",
-                       "category":  "weekend",
-                       "palette":  {
-                                       "primary":  "#FF4500",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#FF0000"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.0,
-                                                       "label":  "2x coins"
-                                                   },
-                                                   {
-                                                       "type":  "rank_reward",
-                                                       "label":  "Top players get legendary rewards"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.0,
-                       "priority":  50,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_perfect_clear",
-                       "i18nKey":  "event.perfect_clear",
-                       "shortLabel":  "Perfect Clear",
-                       "startKey":  "20260315",
-                       "endKey":  "20260316",
-                       "name":  "âœ¨ Perfect Clear Party",
-                       "description":  "No mistakes allowed! Perfect clears give 5x rewards!",
-                       "category":  "weekend",
-                       "palette":  {
-                                       "primary":  "#FFD700",
-                                       "accent":  "#FFFFFF",
-                                       "glow":  "#FFD700"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  2.5,
-                                                       "label":  "2.5x base coins"
-                                                   },
-                                                   {
-                                                       "type":  "perfect_bonus",
-                                                       "multiplier":  5.0,
-                                                       "label":  "5x rewards for perfect clears"
-                                                   }
-                                               ],
-                       "coinMultiplier":  2.5,
-                       "priority":  60,
-                       "stackable":  false
-                   },
-                   {
-                       "id":  "event_mystery_monday",
-                       "i18nKey":  "event.mystery_monday",
-                       "shortLabel":  "Mystery Monday",
-                       "startKey":  "20260406",
-                       "endKey":  "20260407",
-                       "name":  "â“ Mystery Monday",
-                       "description":  "What\u0027s in the box?! Random rewards for every clear!",
-                       "category":  "flash",
-                       "palette":  {
-                                       "primary":  "#800080",
-                                       "accent":  "#FFD700",
-                                       "glow":  "#FF00FF"
-                                   },
-                       "playerFacingRewards":  [
-                                                   {
-                                                       "type":  "coins",
-                                                       "multiplier":  1.5,
-                                                       "label":  "1.5x coins"
-                                                   },
-                                                   {
-                                                       "type":  "modifier",
-                                                       "id":  "MYSTERY_REWARDS",
-                                                       "label":  "Random reward per clear"
-                                                   }
-                                               ],
-                       "coinMultiplier":  1.5,
-                       "mutationOverride":  "MYSTERY_REWARDS",
-                       "priority":  85,
-                       "stackable":  false
-                   }
-               ],
-    "ab":  {
-               "experiments":  [
-
-                               ]
-           },
-    "eventPrograms":  {
-                          "daily":  {
-                                        "id":  "daily_event",
-                                        "enabled":  true,
-                                        "displayName":  "Evento Diario",
-                                        "shortSummary":  "Sempre disponivel",
-                                        "details":  "Desafio diario com objetivo de score. Recompensa diaria segue as regras do Daily Rift.",
-                                        "alwaysOpen":  true,
-                                        "anchorStartKey":  "20260101",
-                                        "openDays":  1,
-                                        "cooldownDays":  0,
-                                        "mode":  "DAILY_RIFT",
-                                        "objectiveType":  "SCORE",
-                                        "objectiveTarget":  9000,
-                                        "coinMultiplier":  1,
-                                        "bossFreqOverride":  null,
-                                        "mutationOverride":  null,
-                                        "firstClearRewardCoins":  0,
-                                        "firstClearRewardTokens":  0,
-                                        "playerFacingRewards":  [
-                                                                    {
-                                                                        "type":  "daily_reward",
-                                                                        "label":  "Recompensa diaria padrao do Daily Rift"
-                                                                    }
-                                                                ]
-                                    },
-                          "weekly":  {
-                                         "id":  "weekly_event",
-                                         "enabled":  true,
-                                         "displayName":  "Evento Semanal",
-                                         "shortSummary":  "Especial por tempo limitado",
-                                         "details":  "Abre por 7 dias e depois fecha. Recompensa de primeira conclusao vale 1x por ciclo.",
-                                         "alwaysOpen":  false,
-                                         "anchorStartKey":  "20260105",
-                                         "openDays":  7,
-                                         "cooldownDays":  14,
-                                         "mode":  "SPACE_GRID",
-                                         "objectiveType":  "SCORE",
-                                         "objectiveTarget":  12000,
-                                         "coinMultiplier":  1.12,
-                                         "bossFreqOverride":  12,
-                                         "mutationOverride":  null,
-                                         "firstClearRewardCoins":  2500,
-                                         "firstClearRewardTokens":  2,
-                                         "playerFacingRewards":  [
-                                                                     {
-                                                                         "type":  "coins",
-                                                                         "amount":  2500,
-                                                                         "label":  "+2500 coins na primeira conclusao do ciclo"
-                                                                     },
-                                                                     {
-                                                                         "type":  "tokens",
-                                                                         "amount":  2,
-                                                                         "label":  "+2 tokens na primeira conclusao do ciclo"
-                                                                     }
-                                                                 ]
-                                     },
-                          "monthly":  {
-                                          "id":  "monthly_event",
-                                          "enabled":  true,
-                                          "displayName":  "Evento Mensal",
-                                          "shortSummary":  "Desafio especial de alta dificuldade",
-                                          "details":  "Abre por 30 dias e depois fecha. Recompensa de primeira conclusao vale 1x por ciclo.",
-                                          "alwaysOpen":  false,
-                                          "anchorStartKey":  "20260101",
-                                          "openDays":  30,
-                                          "cooldownDays":  30,
-                                          "mode":  "SPACE_GRID",
-                                          "objectiveType":  "SCORE",
-                                          "objectiveTarget":  22000,
-                                          "coinMultiplier":  1.2,
-                                          "bossFreqOverride":  10,
-                                          "mutationOverride":  null,
-                                          "firstClearRewardCoins":  7000,
-                                          "firstClearRewardTokens":  5,
-                                          "playerFacingRewards":  [
-                                                                      {
-                                                                          "type":  "coins",
-                                                                          "amount":  7000,
-                                                                          "label":  "+7000 coins na primeira conclusao do ciclo"
-                                                                      },
-                                                                      {
-                                                                          "type":  "tokens",
-                                                                          "amount":  5,
-                                                                          "label":  "+5 tokens na primeira conclusao do ciclo"
-                                                                      }
-                                                                  ]
-                                      }
-                      }
+  "version": 5,
+  "minSupportedVersion": 1,
+  "features": {
+    "cleanHudDefault": true,
+    "enableDaily": true,
+    "enableOverlord": true
+  },
+  "balance": {
+    "comboGain": 0.15,
+    "comboDecay": 0.005,
+    "bossEveryClears": 15,
+    "bossCriticalAlsoTriggers": true,
+    "dailyBaseTarget": 5000,
+    "dailyStreakStep": 500,
+    "assistMockAdSecondsStrong": 30,
+    "assistMockAdSecondsStrongDebug": 2,
+    "assistStrongMaxPerRun": 2,
+    "assistStrongCooldownMinutes": 10,
+    "assistHintFreePerRun": 1,
+    "assistReshuffleCostCoins": 120,
+    "assistReshuffleFreePerRun": 0,
+    "assistShowGlowOnIdleSeconds": 18,
+    "assistShowGlowOnCritical": true
+  },
+  "drops": {
+    "tokenPerfectChance": 0.05,
+    "riftWClearsStep": 50,
+    "riftWChance": 0.12
+  },
+  "shop": {
+    "featuredSkinsDailyCount": 3,
+    "featuredRotationSeed": "2026-01",
+    "bundleDiscountPct": 20
+  },
+  "weekly": {
+    "rotationSeed": "2026-01",
+    "entries": [
+      { "id": "weekly_columns",  "name": "Column Master",       "type": "COLUMNS_25",    "weight": 1 },
+      { "id": "weekly_small",    "name": "Tiny Titans",          "type": "SMALL_PIECES",  "weight": 1 },
+      { "id": "weekly_combo",    "name": "Combo Frenzy",         "type": "COMBO_PLUS_ONE","weight": 1 },
+      { "id": "weekly_blockers", "name": "Obstacle Course",      "type": "START_BLOCKERS","weight": 1 },
+      { "id": "weekly_speed",    "name": "Speed Demon",          "type": "FAST_DECAY",    "weight": 1 },
+      { "id": "weekly_giant",    "name": "Go Big or Go Home",    "type": "BIG_PIECES",    "weight": 1 }
+    ]
+  },
+  "events": [
+    {
+      "id": "event_lunar_new_year_2026",
+      "i18nKey": "event.lunar_new_year",
+      "shortLabel": "Ano Novo Lunar",
+      "startKey": "20260129",
+      "endKey": "20260212",
+      "name": "Ano Novo Lunar 2026",
+      "description": "Ano do Cavalo! 2x moedas + boss a cada 12 clears — bora enriquecer!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FF0000",
+        "accent": "#FFD700",
+        "glow": "#FF4500"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
+        { "type": "boss_frequency", "value": 12, "label": "Boss a cada 12 clears" }
+      ],
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 12,
+      "priority": 80,
+      "stackable": false
+    },
+    {
+      "id": "event_valentines_2026",
+      "i18nKey": "event.valentines",
+      "shortLabel": "Onda do Crush",
+      "startKey": "20260210",
+      "endKey": "20260216",
+      "name": "Onda do Crush",
+      "description": "1.5x moedas — combos valem mais, da match nos blocos!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FF69B4",
+        "accent": "#FF1493",
+        "glow": "#FFB6C1"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+      ],
+      "coinMultiplier": 1.5,
+      "priority": 60,
+      "stackable": false
+    },
+    {
+      "id": "event_carnival_2026",
+      "i18nKey": "event.carnival",
+      "shortLabel": "Carnaval Insano",
+      "startKey": "20260213",
+      "endKey": "20260218",
+      "name": "Carnaval Insano",
+      "description": "1.75x moedas + combo nunca decai! Confete no score!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#00FF00",
+        "glow": "#FF00FF"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.75, "label": "1.75x moedas" },
+        { "type": "modifier", "id": "COMBO_FRENZY", "label": "Combo nunca decai" }
+      ],
+      "coinMultiplier": 1.75,
+      "mutationOverride": "COMBO_FRENZY",
+      "priority": 55,
+      "stackable": false
+    },
+    {
+      "id": "event_st_patrick_2026",
+      "i18nKey": "event.st_patrick",
+      "shortLabel": "Sorte nos Blocos",
+      "startKey": "20260314",
+      "endKey": "20260320",
+      "name": "Sorte nos Blocos",
+      "description": "1.5x moedas — hoje o RNG ta do teu lado, confia!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#00FF00",
+        "accent": "#228B22",
+        "glow": "#32CD32"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+      ],
+      "coinMultiplier": 1.5,
+      "priority": 50,
+      "stackable": false
+    },
+    {
+      "id": "event_easter_2026",
+      "i18nKey": "event.easter",
+      "shortLabel": "Caca aos Ovos",
+      "startKey": "20260403",
+      "endKey": "20260407",
+      "name": "Caca aos Ovos",
+      "description": "Color bombs sao os ovos! 1.5x moedas — caca tudo!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#E6E6FA",
+        "accent": "#FFB347",
+        "glow": "#87CEEB"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
+        { "type": "modifier", "id": "COLOR_BOMB_DAY", "label": "Chuva de color bombs" }
+      ],
+      "coinMultiplier": 1.5,
+      "mutationOverride": "COLOR_BOMB_DAY",
+      "priority": 50,
+      "stackable": false
+    },
+    {
+      "id": "event_april_fools_2026",
+      "i18nKey": "event.april_fools",
+      "shortLabel": "Dia da Zoeira",
+      "startKey": "20260401",
+      "endKey": "20260402",
+      "name": "Dia da Zoeira",
+      "description": "Gravidade zuada + 2x moedas — nada faz sentido!",
+      "category": "flash",
+      "palette": {
+        "primary": "#FF00FF",
+        "accent": "#00FFFF",
+        "glow": "#FFFF00"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
+        { "type": "modifier", "id": "GRAVITY", "label": "Gravidade maluca" }
+      ],
+      "coinMultiplier": 2.0,
+      "mutationOverride": "GRAVITY",
+      "priority": 90,
+      "stackable": false
+    },
+    {
+      "id": "event_earth_day_2026",
+      "i18nKey": "event.earth_day",
+      "shortLabel": "Dia da Terra",
+      "startKey": "20260422",
+      "endKey": "20260424",
+      "name": "Dia da Terra",
+      "description": "1.5x moedas — joga verde e colhe recompensa!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#228B22",
+        "accent": "#8B4513",
+        "glow": "#90EE90"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+      ],
+      "coinMultiplier": 1.5,
+      "priority": 45,
+      "stackable": false
+    },
+    {
+      "id": "event_cinco_de_mayo_2026",
+      "i18nKey": "event.cinco_de_mayo",
+      "shortLabel": "Fiesta Picante",
+      "startKey": "20260505",
+      "endKey": "20260507",
+      "name": "Fiesta Picante",
+      "description": "Score em dobro + 1.75x moedas — ta apimentado!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FF4500",
+        "accent": "#FFD700",
+        "glow": "#00FF00"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.75, "label": "1.75x moedas" },
+        { "type": "modifier", "id": "DOUBLE_SCORE", "label": "Score em dobro" }
+      ],
+      "coinMultiplier": 1.75,
+      "mutationOverride": "DOUBLE_SCORE",
+      "priority": 40,
+      "stackable": false
+    },
+    {
+      "id": "event_summer_solstice_2026",
+      "i18nKey": "event.summer_solstice",
+      "shortLabel": "Verao Infinito",
+      "startKey": "20260620",
+      "endKey": "20260626",
+      "name": "Verao Infinito",
+      "description": "1.5x moedas + combo turbinado — maratona de streaks!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#FF8C00",
+        "glow": "#FFFF00"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
+        { "type": "modifier", "id": "COMBO_BUFF", "label": "Combo turbinado" }
+      ],
+      "coinMultiplier": 1.5,
+      "mutationOverride": "COMBO_BUFF",
+      "priority": 35,
+      "stackable": false
+    },
+    {
+      "id": "event_independence_2026",
+      "i18nKey": "event.independence",
+      "shortLabel": "Festival de Fogos",
+      "startKey": "20260704",
+      "endKey": "20260706",
+      "name": "Festival de Fogos",
+      "description": "2x moedas — cada clear explode! Bora pra cima!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FF0000",
+        "accent": "#0000FF",
+        "glow": "#FFFFFF"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" }
+      ],
+      "coinMultiplier": 2.0,
+      "priority": 60,
+      "stackable": false
+    },
+    {
+      "id": "event_beach_party_2026",
+      "i18nKey": "event.beach_party",
+      "shortLabel": "Praia Mode",
+      "startKey": "20260715",
+      "endKey": "20260731",
+      "name": "Praia Mode",
+      "description": "1.25x moedas o mes todo — vibe relax, surfa no combo!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#00CED1",
+        "accent": "#FFD700",
+        "glow": "#87CEEB"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.25, "label": "1.25x moedas" }
+      ],
+      "coinMultiplier": 1.25,
+      "priority": 30,
+      "stackable": true
+    },
+    {
+      "id": "event_back_to_school_2026",
+      "i18nKey": "event.back_to_school",
+      "shortLabel": "Volta as Aulas",
+      "startKey": "20260825",
+      "endKey": "20260831",
+      "name": "Volta as Aulas",
+      "description": "Pecas menores + 1.5x moedas — jogada de QI alto!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#4169E1",
+        "accent": "#FFD700",
+        "glow": "#FF6347"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
+        { "type": "modifier", "id": "SMALL_PIECES", "label": "Pecas menores" }
+      ],
+      "coinMultiplier": 1.5,
+      "mutationOverride": "SMALL_PIECES",
+      "priority": 25,
+      "stackable": false
+    },
+    {
+      "id": "event_oktoberfest_2026",
+      "i18nKey": "event.oktoberfest",
+      "shortLabel": "Oktoberfest",
+      "startKey": "20260919",
+      "endKey": "20261004",
+      "name": "Oktoberfest",
+      "description": "1.5x moedas + colunas turbinadas — Prost!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#DAA520",
+        "accent": "#8B4513",
+        "glow": "#FFD700"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
+        { "type": "modifier", "id": "COLUMNS_BUFF", "label": "Colunas turbinadas" }
+      ],
+      "coinMultiplier": 1.5,
+      "mutationOverride": "COLUMNS_BUFF",
+      "priority": 25,
+      "stackable": false
+    },
+    {
+      "id": "event_halloween_2026",
+      "i18nKey": "event.halloween",
+      "shortLabel": "Noite do Terror",
+      "startKey": "20261025",
+      "endKey": "20261031",
+      "name": "Noite do Terror",
+      "description": "Nevoa no grid + 2x moedas + boss a cada 10 — sobreviva!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FF6600",
+        "accent": "#8B00FF",
+        "glow": "#00FF00"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
+        { "type": "boss_frequency", "value": 10, "label": "Boss a cada 10 clears" },
+        { "type": "modifier", "id": "FOG_OF_WAR", "label": "Nevoa no grid" }
+      ],
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 10,
+      "mutationOverride": "FOG_OF_WAR",
+      "priority": 70,
+      "stackable": false
+    },
+    {
+      "id": "event_dia_de_muertos_2026",
+      "i18nKey": "event.dia_de_muertos",
+      "shortLabel": "Dia dos Mortos",
+      "startKey": "20261101",
+      "endKey": "20261102",
+      "name": "Dia dos Mortos",
+      "description": "2x moedas — caveiras no grid, celebra com estilo!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#FF1493",
+        "accent": "#FFD700",
+        "glow": "#00FFFF"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" }
+      ],
+      "coinMultiplier": 2.0,
+      "priority": 65,
+      "stackable": false
+    },
+    {
+      "id": "event_thanksgiving_2026",
+      "i18nKey": "event.thanksgiving",
+      "shortLabel": "Festa da Colheita",
+      "startKey": "20261126",
+      "endKey": "20261129",
+      "name": "Festa da Colheita",
+      "description": "1.75x moedas — colhe combos e enche o cofre!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#D2691E",
+        "accent": "#FF4500",
+        "glow": "#FFD700"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.75, "label": "1.75x moedas" }
+      ],
+      "coinMultiplier": 1.75,
+      "priority": 50,
+      "stackable": false
+    },
+    {
+      "id": "event_black_friday_2026",
+      "i18nKey": "event.black_friday",
+      "shortLabel": "Black Friday",
+      "startKey": "20261127",
+      "endKey": "20261130",
+      "name": "Black Friday Insana",
+      "description": "1.5x moedas — aproveita ou chora depois!",
+      "category": "flash",
+      "palette": {
+        "primary": "#000000",
+        "accent": "#FFD700",
+        "glow": "#FF0000"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+      ],
+      "coinMultiplier": 1.5,
+      "priority": 95,
+      "stackable": true
+    },
+    {
+      "id": "event_winter_holidays_2026",
+      "i18nKey": "event.winter_holidays",
+      "shortLabel": "Ferias Geladas",
+      "startKey": "20261220",
+      "endKey": "20261231",
+      "name": "Ferias Geladas",
+      "description": "Pecas gigantes + 2x moedas + boss a cada 10!",
+      "category": "seasonal",
+      "palette": {
+        "primary": "#ADD8E6",
+        "accent": "#FFFFFF",
+        "glow": "#00BFFF"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
+        { "type": "boss_frequency", "value": 10, "label": "Boss a cada 10 clears" },
+        { "type": "modifier", "id": "GIANT_PIECES", "label": "Pecas gigantes" }
+      ],
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 10,
+      "mutationOverride": "GIANT_PIECES",
+      "priority": 85,
+      "stackable": false
+    },
+    {
+      "id": "event_new_years_eve_2026",
+      "i18nKey": "event.new_years_eve",
+      "shortLabel": "Virada do Ano",
+      "startKey": "20261231",
+      "endKey": "20270101",
+      "name": "Virada do Ano",
+      "description": "3x moedas + tabuleiro espelhado — vira tudo de cabeca pra baixo!",
+      "category": "flash",
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#C0C0C0",
+        "glow": "#FFFFFF"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 3.0, "label": "3x moedas" },
+        { "type": "modifier", "id": "MIRROR_BOARD", "label": "Tabuleiro espelhado" }
+      ],
+      "coinMultiplier": 3.0,
+      "mutationOverride": "MIRROR_BOARD",
+      "priority": 99,
+      "stackable": false
+    },
+    {
+      "id": "event_weekly_boss_rush",
+      "i18nKey": "event.weekly_boss_rush",
+      "shortLabel": "Rush de Boss",
+      "startKey": "20260101",
+      "endKey": "20261231",
+      "name": "Rush de Boss",
+      "description": "Boss a cada 5 clears + 2x moedas — aguenta ai!",
+      "category": "weekend",
+      "recurrence": "biweekly_weekend",
+      "palette": {
+        "primary": "#8B0000",
+        "accent": "#FF4500",
+        "glow": "#FF0000"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
+        { "type": "boss_frequency", "value": 5, "label": "Boss a cada 5 clears" }
+      ],
+      "coinMultiplier": 2.0,
+      "bossFreqOverride": 5,
+      "priority": 70,
+      "stackable": false
+    },
+    {
+      "id": "event_combo_challenge",
+      "i18nKey": "event.combo_challenge",
+      "shortLabel": "Desafio Combo",
+      "startKey": "20260101",
+      "endKey": "20261231",
+      "name": "Desafio Combo",
+      "description": "1.5x moedas + combo buff — quem combo mais, leva mais!",
+      "category": "weekend",
+      "recurrence": "biweekly_weekend_odd",
+      "palette": {
+        "primary": "#00FFFF",
+        "accent": "#FF00FF",
+        "glow": "#FFFF00"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
+        { "type": "modifier", "id": "COMBO_BUFF", "label": "Combo turbinado" }
+      ],
+      "coinMultiplier": 1.5,
+      "mutationOverride": "COMBO_BUFF",
+      "priority": 50,
+      "stackable": false
+    },
+    {
+      "id": "event_speed_run",
+      "i18nKey": "event.speed_run",
+      "shortLabel": "Corre Corre",
+      "startKey": "20260101",
+      "endKey": "20261231",
+      "name": "Corre Corre",
+      "description": "Rodada rapida + 2x moedas — velocidade maxima!",
+      "category": "weekend",
+      "recurrence": "monthly_first_weekend",
+      "palette": {
+        "primary": "#FF4500",
+        "accent": "#FFD700",
+        "glow": "#FF0000"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
+        { "type": "modifier", "id": "SPEED_ROUND", "label": "Rodada rapida" }
+      ],
+      "coinMultiplier": 2.0,
+      "mutationOverride": "SPEED_ROUND",
+      "priority": 50,
+      "stackable": false
+    },
+    {
+      "id": "event_perfect_clear",
+      "i18nKey": "event.perfect_clear",
+      "shortLabel": "Clear Perfeito",
+      "startKey": "20260101",
+      "endKey": "20261231",
+      "name": "Clear Perfeito",
+      "description": "2.5x moedas — mira na perfeicao, cada clear conta!",
+      "category": "weekend",
+      "recurrence": "monthly_first_weekend_odd",
+      "palette": {
+        "primary": "#FFD700",
+        "accent": "#FFFFFF",
+        "glow": "#FFD700"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 2.5, "label": "2.5x moedas" }
+      ],
+      "coinMultiplier": 2.5,
+      "priority": 60,
+      "stackable": false
+    },
+    {
+      "id": "event_mystery_monday",
+      "i18nKey": "event.mystery_monday",
+      "shortLabel": "Segunda Misteriosa",
+      "startKey": "20260101",
+      "endKey": "20261231",
+      "name": "Segunda Misteriosa",
+      "description": "Bonus nos primeiros clears + 1.5x moedas — surpresa!",
+      "category": "flash",
+      "recurrence": "biweekly_monday",
+      "palette": {
+        "primary": "#800080",
+        "accent": "#FFD700",
+        "glow": "#FF00FF"
+      },
+      "playerFacingRewards": [
+        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
+        { "type": "modifier", "id": "EARLY_BONUS", "label": "Bonus nos primeiros clears" }
+      ],
+      "coinMultiplier": 1.5,
+      "mutationOverride": "EARLY_BONUS",
+      "priority": 85,
+      "stackable": false
+    }
+  ],
+  "ab": {
+    "experiments": []
+  },
+  "eventPrograms": {
+    "daily": {
+      "id": "daily_event",
+      "enabled": true,
+      "displayName": "Evento Diario",
+      "shortSummary": "Sempre disponivel",
+      "details": "Desafio diario com objetivo de score. Recompensa diaria segue as regras do Daily Rift.",
+      "alwaysOpen": true,
+      "anchorStartKey": "20260101",
+      "openDays": 1,
+      "cooldownDays": 0,
+      "mode": "DAILY_RIFT",
+      "objectiveType": "SCORE",
+      "objectiveTarget": 9000,
+      "coinMultiplier": 1,
+      "bossFreqOverride": null,
+      "mutationOverride": null,
+      "firstClearRewardCoins": 0,
+      "firstClearRewardTokens": 0,
+      "playerFacingRewards": [
+        { "type": "daily_reward", "label": "Recompensa diaria padrao do Daily Rift" }
+      ]
+    },
+    "weekly": {
+      "id": "weekly_event",
+      "enabled": true,
+      "displayName": "Evento Semanal",
+      "shortSummary": "Especial por tempo limitado",
+      "details": "Abre por 7 dias e depois fecha. Recompensa de primeira conclusao vale 1x por ciclo.",
+      "alwaysOpen": false,
+      "anchorStartKey": "20260105",
+      "openDays": 7,
+      "cooldownDays": 14,
+      "mode": "SPACE_GRID",
+      "objectiveType": "SCORE",
+      "objectiveTarget": 12000,
+      "coinMultiplier": 1.12,
+      "bossFreqOverride": 12,
+      "mutationOverride": null,
+      "firstClearRewardCoins": 2500,
+      "firstClearRewardTokens": 2,
+      "playerFacingRewards": [
+        { "type": "coins", "amount": 2500, "label": "+2500 coins na primeira conclusao do ciclo" },
+        { "type": "tokens", "amount": 2, "label": "+2 tokens na primeira conclusao do ciclo" }
+      ]
+    },
+    "monthly": {
+      "id": "monthly_event",
+      "enabled": true,
+      "displayName": "Evento Mensal",
+      "shortSummary": "Desafio especial de alta dificuldade",
+      "details": "Abre por 30 dias e depois fecha. Recompensa de primeira conclusao vale 1x por ciclo.",
+      "alwaysOpen": false,
+      "anchorStartKey": "20260101",
+      "openDays": 30,
+      "cooldownDays": 30,
+      "mode": "SPACE_GRID",
+      "objectiveType": "SCORE",
+      "objectiveTarget": 22000,
+      "coinMultiplier": 1.2,
+      "bossFreqOverride": 10,
+      "mutationOverride": null,
+      "firstClearRewardCoins": 7000,
+      "firstClearRewardTokens": 5,
+      "playerFacingRewards": [
+        { "type": "coins", "amount": 7000, "label": "+7000 coins na primeira conclusao do ciclo" },
+        { "type": "tokens", "amount": 5, "label": "+5 tokens na primeira conclusao do ciclo" }
+      ]
+    }
+  }
 }
