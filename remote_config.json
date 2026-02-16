@@ -36,12 +36,42 @@
   "weekly": {
     "rotationSeed": "2026-01",
     "entries": [
-      { "id": "weekly_columns",  "name": "Column Master",       "type": "COLUMNS_25",    "weight": 1 },
-      { "id": "weekly_small",    "name": "Tiny Titans",          "type": "SMALL_PIECES",  "weight": 1 },
-      { "id": "weekly_combo",    "name": "Combo Frenzy",         "type": "COMBO_PLUS_ONE","weight": 1 },
-      { "id": "weekly_blockers", "name": "Obstacle Course",      "type": "START_BLOCKERS","weight": 1 },
-      { "id": "weekly_speed",    "name": "Speed Demon",          "type": "FAST_DECAY",    "weight": 1 },
-      { "id": "weekly_giant",    "name": "Go Big or Go Home",    "type": "BIG_PIECES",    "weight": 1 }
+      {
+        "id": "weekly_columns",
+        "name": "Column Master",
+        "type": "COLUMNS_25",
+        "weight": 1
+      },
+      {
+        "id": "weekly_small",
+        "name": "Tiny Titans",
+        "type": "SMALL_PIECES",
+        "weight": 1
+      },
+      {
+        "id": "weekly_combo",
+        "name": "Combo Frenzy",
+        "type": "COMBO_PLUS_ONE",
+        "weight": 1
+      },
+      {
+        "id": "weekly_blockers",
+        "name": "Obstacle Course",
+        "type": "START_BLOCKERS",
+        "weight": 1
+      },
+      {
+        "id": "weekly_speed",
+        "name": "Speed Demon",
+        "type": "FAST_DECAY",
+        "weight": 1
+      },
+      {
+        "id": "weekly_giant",
+        "name": "Go Big or Go Home",
+        "type": "BIG_PIECES",
+        "weight": 1
+      }
     ]
   },
   "events": [
@@ -60,8 +90,16 @@
         "glow": "#FF4500"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
-        { "type": "boss_frequency", "value": 12, "label": "Boss a cada 12 clears" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        },
+        {
+          "type": "boss_frequency",
+          "value": 12,
+          "label": "Boss a cada 12 clears"
+        }
       ],
       "coinMultiplier": 2.0,
       "bossFreqOverride": 12,
@@ -83,7 +121,11 @@
         "glow": "#FFB6C1"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        }
       ],
       "coinMultiplier": 1.5,
       "priority": 60,
@@ -104,8 +146,16 @@
         "glow": "#FF00FF"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.75, "label": "1.75x moedas" },
-        { "type": "modifier", "id": "COMBO_FRENZY", "label": "Combo nunca decai" }
+        {
+          "type": "coins",
+          "multiplier": 1.75,
+          "label": "1.75x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "COMBO_FRENZY",
+          "label": "Combo nunca decai"
+        }
       ],
       "coinMultiplier": 1.75,
       "mutationOverride": "COMBO_FRENZY",
@@ -127,7 +177,11 @@
         "glow": "#32CD32"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        }
       ],
       "coinMultiplier": 1.5,
       "priority": 50,
@@ -148,8 +202,16 @@
         "glow": "#87CEEB"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
-        { "type": "modifier", "id": "COLOR_BOMB_DAY", "label": "Chuva de color bombs" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "COLOR_BOMB_DAY",
+          "label": "Chuva de color bombs"
+        }
       ],
       "coinMultiplier": 1.5,
       "mutationOverride": "COLOR_BOMB_DAY",
@@ -171,8 +233,16 @@
         "glow": "#FFFF00"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
-        { "type": "modifier", "id": "GRAVITY", "label": "Gravidade maluca" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "GRAVITY",
+          "label": "Gravidade maluca"
+        }
       ],
       "coinMultiplier": 2.0,
       "mutationOverride": "GRAVITY",
@@ -194,7 +264,11 @@
         "glow": "#90EE90"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        }
       ],
       "coinMultiplier": 1.5,
       "priority": 45,
@@ -215,8 +289,16 @@
         "glow": "#00FF00"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.75, "label": "1.75x moedas" },
-        { "type": "modifier", "id": "DOUBLE_SCORE", "label": "Score em dobro" }
+        {
+          "type": "coins",
+          "multiplier": 1.75,
+          "label": "1.75x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "DOUBLE_SCORE",
+          "label": "Score em dobro"
+        }
       ],
       "coinMultiplier": 1.75,
       "mutationOverride": "DOUBLE_SCORE",
@@ -238,8 +320,16 @@
         "glow": "#FFFF00"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
-        { "type": "modifier", "id": "COMBO_BUFF", "label": "Combo turbinado" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "COMBO_BUFF",
+          "label": "Combo turbinado"
+        }
       ],
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
@@ -261,7 +351,11 @@
         "glow": "#FFFFFF"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        }
       ],
       "coinMultiplier": 2.0,
       "priority": 60,
@@ -282,7 +376,11 @@
         "glow": "#87CEEB"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.25, "label": "1.25x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 1.25,
+          "label": "1.25x moedas"
+        }
       ],
       "coinMultiplier": 1.25,
       "priority": 30,
@@ -303,8 +401,16 @@
         "glow": "#FF6347"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
-        { "type": "modifier", "id": "SMALL_PIECES", "label": "Pecas menores" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "SMALL_PIECES",
+          "label": "Pecas menores"
+        }
       ],
       "coinMultiplier": 1.5,
       "mutationOverride": "SMALL_PIECES",
@@ -326,8 +432,16 @@
         "glow": "#FFD700"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
-        { "type": "modifier", "id": "COLUMNS_BUFF", "label": "Colunas turbinadas" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "COLUMNS_BUFF",
+          "label": "Colunas turbinadas"
+        }
       ],
       "coinMultiplier": 1.5,
       "mutationOverride": "COLUMNS_BUFF",
@@ -349,9 +463,21 @@
         "glow": "#00FF00"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
-        { "type": "boss_frequency", "value": 10, "label": "Boss a cada 10 clears" },
-        { "type": "modifier", "id": "FOG_OF_WAR", "label": "Nevoa no grid" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        },
+        {
+          "type": "boss_frequency",
+          "value": 10,
+          "label": "Boss a cada 10 clears"
+        },
+        {
+          "type": "modifier",
+          "id": "FOG_OF_WAR",
+          "label": "Nevoa no grid"
+        }
       ],
       "coinMultiplier": 2.0,
       "bossFreqOverride": 10,
@@ -374,7 +500,11 @@
         "glow": "#00FFFF"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        }
       ],
       "coinMultiplier": 2.0,
       "priority": 65,
@@ -395,7 +525,11 @@
         "glow": "#FFD700"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.75, "label": "1.75x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 1.75,
+          "label": "1.75x moedas"
+        }
       ],
       "coinMultiplier": 1.75,
       "priority": 50,
@@ -416,7 +550,11 @@
         "glow": "#FF0000"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        }
       ],
       "coinMultiplier": 1.5,
       "priority": 95,
@@ -437,9 +575,21 @@
         "glow": "#00BFFF"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
-        { "type": "boss_frequency", "value": 10, "label": "Boss a cada 10 clears" },
-        { "type": "modifier", "id": "GIANT_PIECES", "label": "Pecas gigantes" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        },
+        {
+          "type": "boss_frequency",
+          "value": 10,
+          "label": "Boss a cada 10 clears"
+        },
+        {
+          "type": "modifier",
+          "id": "GIANT_PIECES",
+          "label": "Pecas gigantes"
+        }
       ],
       "coinMultiplier": 2.0,
       "bossFreqOverride": 10,
@@ -462,8 +612,16 @@
         "glow": "#FFFFFF"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 3.0, "label": "3x moedas" },
-        { "type": "modifier", "id": "MIRROR_BOARD", "label": "Tabuleiro espelhado" }
+        {
+          "type": "coins",
+          "multiplier": 3.0,
+          "label": "3x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "MIRROR_BOARD",
+          "label": "Tabuleiro espelhado"
+        }
       ],
       "coinMultiplier": 3.0,
       "mutationOverride": "MIRROR_BOARD",
@@ -486,8 +644,16 @@
         "glow": "#FF0000"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
-        { "type": "boss_frequency", "value": 5, "label": "Boss a cada 5 clears" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        },
+        {
+          "type": "boss_frequency",
+          "value": 5,
+          "label": "Boss a cada 5 clears"
+        }
       ],
       "coinMultiplier": 2.0,
       "bossFreqOverride": 5,
@@ -510,8 +676,16 @@
         "glow": "#FFFF00"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
-        { "type": "modifier", "id": "COMBO_BUFF", "label": "Combo turbinado" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "COMBO_BUFF",
+          "label": "Combo turbinado"
+        }
       ],
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
@@ -534,8 +708,16 @@
         "glow": "#FF0000"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.0, "label": "2x moedas" },
-        { "type": "modifier", "id": "SPEED_ROUND", "label": "Rodada rapida" }
+        {
+          "type": "coins",
+          "multiplier": 2.0,
+          "label": "2x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "SPEED_ROUND",
+          "label": "Rodada rapida"
+        }
       ],
       "coinMultiplier": 2.0,
       "mutationOverride": "SPEED_ROUND",
@@ -558,7 +740,11 @@
         "glow": "#FFD700"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 2.5, "label": "2.5x moedas" }
+        {
+          "type": "coins",
+          "multiplier": 2.5,
+          "label": "2.5x moedas"
+        }
       ],
       "coinMultiplier": 2.5,
       "priority": 60,
@@ -580,8 +766,16 @@
         "glow": "#FF00FF"
       },
       "playerFacingRewards": [
-        { "type": "coins", "multiplier": 1.5, "label": "1.5x moedas" },
-        { "type": "modifier", "id": "EARLY_BONUS", "label": "Bonus nos primeiros clears" }
+        {
+          "type": "coins",
+          "multiplier": 1.5,
+          "label": "1.5x moedas"
+        },
+        {
+          "type": "modifier",
+          "id": "EARLY_BONUS",
+          "label": "Bonus nos primeiros clears"
+        }
       ],
       "coinMultiplier": 1.5,
       "mutationOverride": "EARLY_BONUS",
@@ -596,9 +790,9 @@
     "daily": {
       "id": "daily_event",
       "enabled": true,
-      "displayName": "Evento Diario",
-      "shortSummary": "Sempre disponivel",
-      "details": "Desafio diario com objetivo de score. Recompensa diaria segue as regras do Daily Rift.",
+      "displayName": "Evento Diário",
+      "shortSummary": "Um desafio rápido renovado a cada 24 horas.",
+      "details": "As regras são simples: jogue o Daily Rift e conquiste a maior pontuação possível. As recompensas baseiam-se no seu desempenho!",
       "alwaysOpen": true,
       "anchorStartKey": "20260101",
       "openDays": 1,
@@ -612,15 +806,18 @@
       "firstClearRewardCoins": 0,
       "firstClearRewardTokens": 0,
       "playerFacingRewards": [
-        { "type": "daily_reward", "label": "Recompensa diaria padrao do Daily Rift" }
+        {
+          "type": "daily_reward",
+          "label": "Recompensa segue as regras do Daily Rift"
+        }
       ]
     },
     "weekly": {
       "id": "weekly_event",
       "enabled": true,
       "displayName": "Evento Semanal",
-      "shortSummary": "Especial por tempo limitado",
-      "details": "Abre por 7 dias e depois fecha. Recompensa de primeira conclusao vale 1x por ciclo.",
+      "shortSummary": "Uma maratona de 7 dias para testar sua consistência.",
+      "details": "Este evento abre por 7 dias, pausa por 14 dias e depois repete. Aproveite a janela para pontuar alto!",
       "alwaysOpen": false,
       "anchorStartKey": "20260105",
       "openDays": 7,
@@ -634,16 +831,28 @@
       "firstClearRewardCoins": 2500,
       "firstClearRewardTokens": 2,
       "playerFacingRewards": [
-        { "type": "coins", "amount": 2500, "label": "+2500 coins na primeira conclusao do ciclo" },
-        { "type": "tokens", "amount": 2, "label": "+2 tokens na primeira conclusao do ciclo" }
+        {
+          "type": "coins",
+          "amount": 2500,
+          "label": "+2500 Moedas (1ª conclusão)"
+        },
+        {
+          "type": "tokens",
+          "amount": 2,
+          "label": "+2 Fichas (1ª conclusão)"
+        },
+        {
+          "type": "multiplier",
+          "label": "1.12x Multiplicador de Moedas"
+        }
       ]
     },
     "monthly": {
       "id": "monthly_event",
       "enabled": true,
       "displayName": "Evento Mensal",
-      "shortSummary": "Desafio especial de alta dificuldade",
-      "details": "Abre por 30 dias e depois fecha. Recompensa de primeira conclusao vale 1x por ciclo.",
+      "shortSummary": "O teste supremo de resistência.",
+      "details": "Disponível por 30 dias, com pausa de 30 dias e depois repete. Um ciclo longo para quem busca a glória máxima.",
       "alwaysOpen": false,
       "anchorStartKey": "20260101",
       "openDays": 30,
@@ -657,8 +866,20 @@
       "firstClearRewardCoins": 7000,
       "firstClearRewardTokens": 5,
       "playerFacingRewards": [
-        { "type": "coins", "amount": 7000, "label": "+7000 coins na primeira conclusao do ciclo" },
-        { "type": "tokens", "amount": 5, "label": "+5 tokens na primeira conclusao do ciclo" }
+        {
+          "type": "coins",
+          "amount": 7000,
+          "label": "+7000 Moedas (1ª conclusão)"
+        },
+        {
+          "type": "tokens",
+          "amount": 5,
+          "label": "+5 Fichas (1ª conclusão)"
+        },
+        {
+          "type": "multiplier",
+          "label": "1.2x Multiplicador de Moedas"
+        }
       ]
     }
   }
