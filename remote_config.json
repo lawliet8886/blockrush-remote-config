@@ -82,7 +82,7 @@
       "startKey": "20260129",
       "endKey": "20260212",
       "name": "Ano Novo Lunar 2026",
-      "description": "Ano do Cavalo! 2x moedas + boss a cada 12 clears   bora enriquecer!",
+      "description": "Ano do Cavalo! 2x moedas + boss a cada 12 clears — bora enriquecer!",
       "category": "seasonal",
       "palette": {
         "primary": "#FF0000",
@@ -113,7 +113,7 @@
       "startKey": "20260210",
       "endKey": "20260216",
       "name": "Onda do Crush",
-      "description": "1.5x moedas   combos valem mais, da match nos blocos!",
+      "description": "1.5x moedas — combos valem mais, da match nos blocos!",
       "category": "seasonal",
       "palette": {
         "primary": "#FF69B4",
@@ -164,7 +164,7 @@
       "startKey": "20260314",
       "endKey": "20260320",
       "name": "Sorte nos Blocos",
-      "description": "1.5x moedas   hoje o RNG ta do teu lado, confia!",
+      "description": "1.5x moedas — hoje o RNG ta do teu lado, confia!",
       "category": "seasonal",
       "palette": {
         "primary": "#00FF00",
@@ -189,7 +189,7 @@
       "startKey": "20260403",
       "endKey": "20260407",
       "name": "Caca aos Ovos",
-      "description": "Color bombs sao os ovos! 1.5x moedas   caca tudo!",
+      "description": "Color bombs sao os ovos! 1.5x moedas — caca tudo!",
       "category": "seasonal",
       "palette": {
         "primary": "#E6E6FA",
@@ -220,7 +220,7 @@
       "startKey": "20260401",
       "endKey": "20260402",
       "name": "Dia da Zoeira",
-      "description": "Gravidade zuada + 2x moedas   nada faz sentido!",
+      "description": "Gravidade zuada + 2x moedas — nada faz sentido!",
       "category": "flash",
       "palette": {
         "primary": "#FF00FF",
@@ -251,7 +251,7 @@
       "startKey": "20260422",
       "endKey": "20260424",
       "name": "Dia da Terra",
-      "description": "1.5x moedas   joga verde e colhe recompensa!",
+      "description": "1.5x moedas — joga verde e colhe recompensa!",
       "category": "seasonal",
       "palette": {
         "primary": "#228B22",
@@ -276,7 +276,7 @@
       "startKey": "20260505",
       "endKey": "20260507",
       "name": "Fiesta Picante",
-      "description": "Score em dobro + 1.75x moedas   ta apimentado!",
+      "description": "Score em dobro + 1.75x moedas — ta apimentado!",
       "category": "seasonal",
       "palette": {
         "primary": "#FF4500",
@@ -307,7 +307,7 @@
       "startKey": "20260620",
       "endKey": "20260626",
       "name": "Verao Infinito",
-      "description": "1.5x moedas + combo turbinado   maratona de streaks!",
+      "description": "1.5x moedas + combo turbinado — maratona de streaks!",
       "category": "seasonal",
       "palette": {
         "primary": "#FFD700",
@@ -338,7 +338,7 @@
       "startKey": "20260704",
       "endKey": "20260706",
       "name": "Festival de Fogos",
-      "description": "2x moedas   cada clear explode! Bora pra cima!",
+      "description": "2x moedas — cada clear explode! Bora pra cima!",
       "category": "seasonal",
       "palette": {
         "primary": "#FF0000",
@@ -363,7 +363,7 @@
       "startKey": "20260715",
       "endKey": "20260731",
       "name": "Praia Mode",
-      "description": "1.25x moedas o mes todo   vibe relax, surfa no combo!",
+      "description": "1.25x moedas o mes todo — vibe relax, surfa no combo!",
       "category": "seasonal",
       "palette": {
         "primary": "#00CED1",
@@ -388,7 +388,7 @@
       "startKey": "20260825",
       "endKey": "20260831",
       "name": "Volta as Aulas",
-      "description": "Pecas menores + 1.5x moedas   jogada de QI alto!",
+      "description": "Pecas menores + 1.5x moedas — jogada de QI alto!",
       "category": "seasonal",
       "palette": {
         "primary": "#4169E1",
@@ -419,7 +419,7 @@
       "startKey": "20260919",
       "endKey": "20261004",
       "name": "Oktoberfest",
-      "description": "1.5x moedas + colunas turbinadas   Prost!",
+      "description": "1.5x moedas + colunas turbinadas — Prost!",
       "category": "seasonal",
       "palette": {
         "primary": "#DAA520",
@@ -450,7 +450,7 @@
       "startKey": "20261025",
       "endKey": "20261031",
       "name": "Noite do Terror",
-      "description": "Nevoa no grid + 2x moedas + boss a cada 10   sobreviva!",
+      "description": "Nevoa no grid + 2x moedas + boss a cada 10 — sobreviva!",
       "category": "seasonal",
       "palette": {
         "primary": "#FF6600",
@@ -487,7 +487,7 @@
       "startKey": "20261101",
       "endKey": "20261102",
       "name": "Dia dos Mortos",
-      "description": "2x moedas   caveiras no grid, celebra com estilo!",
+      "description": "2x moedas — caveiras no grid, celebra com estilo!",
       "category": "seasonal",
       "palette": {
         "primary": "#FF1493",
@@ -512,7 +512,7 @@
       "startKey": "20261126",
       "endKey": "20261129",
       "name": "Festa da Colheita",
-      "description": "1.75x moedas   colhe combos e enche o cofre!",
+      "description": "1.75x moedas — colhe combos e enche o cofre!",
       "category": "seasonal",
       "palette": {
         "primary": "#D2691E",
@@ -537,7 +537,7 @@
       "startKey": "20261127",
       "endKey": "20261130",
       "name": "Black Friday Insana",
-      "description": "1.5x moedas   aproveita ou chora depois!",
+      "description": "1.5x moedas — aproveita ou chora depois!",
       "category": "flash",
       "palette": {
         "primary": "#000000",
@@ -599,7 +599,7 @@
       "startKey": "20261231",
       "endKey": "20270101",
       "name": "Virada do Ano",
-      "description": "3x moedas + tabuleiro espelhado   vira tudo de cabeca pra baixo!",
+      "description": "3x moedas + tabuleiro espelhado — vira tudo de cabeca pra baixo!",
       "category": "flash",
       "palette": {
         "primary": "#FFD700",
@@ -630,7 +630,7 @@
       "startKey": "20260101",
       "endKey": "20261231",
       "name": "Rush de Boss",
-      "description": "Boss a cada 5 clears + 2x moedas   aguenta ai!",
+      "description": "Boss a cada 5 clears + 2x moedas — aguenta ai!",
       "category": "weekend",
       "recurrence": "biweekly_weekend",
       "palette": {
@@ -662,7 +662,7 @@
       "startKey": "20260101",
       "endKey": "20261231",
       "name": "Desafio Combo",
-      "description": "1.5x moedas + combo buff   quem combo mais, leva mais!",
+      "description": "1.5x moedas + combo buff — quem combo mais, leva mais!",
       "category": "weekend",
       "recurrence": "biweekly_weekend_odd",
       "palette": {
@@ -694,7 +694,7 @@
       "startKey": "20260101",
       "endKey": "20261231",
       "name": "Corre Corre",
-      "description": "Rodada rapida + 2x moedas   velocidade maxima!",
+      "description": "Rodada rapida + 2x moedas — velocidade maxima!",
       "category": "weekend",
       "recurrence": "monthly_first_weekend",
       "palette": {
@@ -726,7 +726,7 @@
       "startKey": "20260101",
       "endKey": "20261231",
       "name": "Clear Perfeito",
-      "description": "2.5x moedas   mira na perfeicao, cada clear conta!",
+      "description": "2.5x moedas — mira na perfeicao, cada clear conta!",
       "category": "weekend",
       "recurrence": "monthly_first_weekend_odd",
       "palette": {
@@ -752,7 +752,7 @@
       "startKey": "20260101",
       "endKey": "20261231",
       "name": "Segunda Misteriosa",
-      "description": "Bonus nos primeiros clears + 1.5x moedas   surpresa!",
+      "description": "Bonus nos primeiros clears + 1.5x moedas — surpresa!",
       "category": "flash",
       "recurrence": "biweekly_monday",
       "palette": {
@@ -785,9 +785,9 @@
     "daily": {
       "id": "daily_event",
       "enabled": true,
-      "displayName": "Evento Di rio",
-      "shortSummary": "Um desafio r pido renovado a cada 24 horas.",
-      "details": "As regras s o simples: jogue o Daily Rift e conquiste a maior pontua  o poss vel. As recompensas baseiam-se no seu desempenho!",
+      "displayName": "Evento Diário",
+      "shortSummary": "Um desafio rápido renovado a cada 24 horas.",
+      "details": "As regras são simples: jogue o Daily Rift e conquiste a maior pontuação possível. As recompensas baseiam-se no seu desempenho!",
       "alwaysOpen": true,
       "anchorStartKey": "20260101",
       "openDays": 1,
@@ -811,7 +811,7 @@
       "id": "weekly_event",
       "enabled": true,
       "displayName": "Evento Semanal",
-      "shortSummary": "Uma maratona de 7 dias para testar sua consist ncia.",
+      "shortSummary": "Uma maratona de 7 dias para testar sua consistência.",
       "details": "Este evento abre por 7 dias, pausa por 14 dias e depois repete. Aproveite a janela para pontuar alto!",
       "alwaysOpen": false,
       "anchorStartKey": "20260105",
@@ -829,12 +829,12 @@
         {
           "type": "coins",
           "amount": 2500,
-          "label": "+2500 Moedas (1  conclus o)"
+          "label": "+2500 Moedas (1ª conclusão)"
         },
         {
           "type": "tokens",
           "amount": 2,
-          "label": "+2 Fichas (1  conclus o)"
+          "label": "+2 Fichas (1ª conclusão)"
         },
         {
           "type": "multiplier",
@@ -846,8 +846,8 @@
       "id": "monthly_event",
       "enabled": true,
       "displayName": "Evento Mensal",
-      "shortSummary": "O teste supremo de resist ncia.",
-      "details": "Dispon vel por 30 dias, com pausa de 30 dias e depois repete. Um ciclo longo para quem busca a gl ria m xima.",
+      "shortSummary": "O teste supremo de resistência.",
+      "details": "Disponível por 30 dias, com pausa de 30 dias e depois repete. Um ciclo longo para quem busca a glória máxima.",
       "alwaysOpen": false,
       "anchorStartKey": "20260101",
       "openDays": 30,
@@ -864,12 +864,12 @@
         {
           "type": "coins",
           "amount": 7000,
-          "label": "+7000 Moedas (1  conclus o)"
+          "label": "+7000 Moedas (1ª conclusão)"
         },
         {
           "type": "tokens",
           "amount": 5,
-          "label": "+5 Fichas (1  conclus o)"
+          "label": "+5 Fichas (1ª conclusão)"
         },
         {
           "type": "multiplier",
