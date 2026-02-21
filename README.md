@@ -83,3 +83,23 @@ Adicione um objeto na lista `events`:
 - `bossFreqOverride`: Frequência de boss (menor = mais frequente)
 - `mutationOverride`: Modificador especial de gameplay
 - `category`: "seasonal", "weekend", "flash"
+
+
+## ✅ app-ads.txt (AdMob)
+
+Arquivo publicado:
+- `app-ads.txt` (raiz do repositório)
+- `docs/app-ads.txt` (publicado via GitHub Pages)
+
+URL correta para este repositório (`blockrush-remote-config`):
+- `https://lawliet8886.github.io/blockrush-remote-config/app-ads.txt`
+
+> `https://lawliet8886.github.io/app-ads.txt` só funciona se o repositório for exatamente `lawliet8886.github.io`.
+
+### Se der 404, confira:
+- Se você estiver trabalhando na branch `work`, o deploy também é disparado (workflow configurado para `main` e `work`).
+1. **Pages habilitado** em `Settings > Pages`.
+2. Fonte configurada para **GitHub Actions** (workflow `Deploy GitHub Pages`).
+3. Arquivo existe no deploy em `docs/app-ads.txt`.
+4. O deploy da action terminou com sucesso em `Actions`.
+5. Aguarde 2-10 minutos após o primeiro deploy.
