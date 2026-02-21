@@ -83,3 +83,33 @@ Adicione um objeto na lista `events`:
 - `bossFreqOverride`: Frequência de boss (menor = mais frequente)
 - `mutationOverride`: Modificador especial de gameplay
 - `category`: "seasonal", "weekend", "flash"
+
+
+## ✅ app-ads.txt (AdMob)
+
+Para o rastreador do AdMob, o arquivo precisa estar exatamente na **raiz do domínio**:
+- `https://lawliet8886.github.io/app-ads.txt`
+
+### Importante
+`https://lawliet8886.github.io/blockrush-remote-config/app-ads.txt` (project page) **não atende** ao requisito do rastreador para domínio raiz.
+
+### Como fazer funcionar
+Você tem 2 opções:
+1. Criar/usar o repositório **`lawliet8886.github.io`** (GitHub Pages de usuário) e colocar `app-ads.txt` na raiz dele.
+2. Usar um domínio próprio (ex.: `seusite.com`) apontado para Pages e publicar `https://seusite.com/app-ads.txt`.
+
+### Passo a passo recomendado (mais simples)
+1. Crie um repositório público chamado exatamente `lawliet8886.github.io`.
+2. Na raiz desse repositório, crie `app-ads.txt`.
+3. Conteúdo:
+
+```txt
+google.com, pub-7897055230727953, DIRECT, f08c47fec0942fa0
+```
+
+4. Faça commit e push.
+5. Teste em navegador anônimo: `https://lawliet8886.github.io/app-ads.txt`.
+
+### Sobre este repositório
+Este repositório (`blockrush-remote-config`) pode continuar hospedando o remote config normalmente, mas ele não consegue servir `app-ads.txt` no caminho raiz `lawliet8886.github.io/app-ads.txt` por ser um project page.
+
