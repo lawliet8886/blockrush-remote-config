@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "minSupportedVersion": 1,
   "features": {
     "cleanHudDefault": true,
@@ -107,7 +107,26 @@
       "coinMultiplier": 2.0,
       "bossFreqOverride": 12,
       "priority": 80,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 1,
+        "startDay": 29,
+        "endMonth": 2,
+        "endDay": 9
+      },
+      "effects": {
+        "rewardBoost": 2.0,
+        "bossCadence": 12
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 120,
+        "rewardCoins": 1800,
+        "rewardTokens": 1,
+        "shortLabel": "120 clears"
+      }
     },
     {
       "id": "event_valentines_2026",
@@ -135,7 +154,26 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 60,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 2,
+        "startDay": 10,
+        "endMonth": 2,
+        "endDay": 14
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "comboHook": "CHAIN_SPARK"
+      },
+      "windowGoal": {
+        "type": "COMBOS",
+        "target": 60,
+        "rewardCoins": 1200,
+        "rewardTokens": 1,
+        "shortLabel": "60 combos"
+      }
     },
     {
       "id": "event_carnival_2026",
@@ -164,7 +202,25 @@
       "coinMultiplier": 1.75,
       "mutationOverride": null,
       "priority": 55,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "MOVABLE_HOLIDAY",
+        "holiday": "CARNIVAL_TUESDAY",
+        "startOffsetDays": -2,
+        "endOffsetDays": 1
+      },
+      "effects": {
+        "rewardBoost": 1.75,
+        "scoreBoost": 1.1
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 45,
+        "rewardCoins": 1400,
+        "rewardTokens": 1,
+        "shortLabel": "45 clears"
+      }
     },
     {
       "id": "event_st_patrick_2026",
@@ -192,7 +248,25 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 50,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 3,
+        "startDay": 14,
+        "endMonth": 3,
+        "endDay": 20
+      },
+      "effects": {
+        "rewardBoost": 1.5
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 40,
+        "rewardCoins": 1200,
+        "rewardTokens": 1,
+        "shortLabel": "40 clears"
+      }
     },
     {
       "id": "event_easter_2026",
@@ -226,7 +300,25 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COLOR_BOMB_DAY",
       "priority": 50,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "MOVABLE_HOLIDAY",
+        "holiday": "EASTER_SUNDAY",
+        "startOffsetDays": -2,
+        "endOffsetDays": 2
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "boardRule": "COLOR_BOMB_DAY"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 35,
+        "rewardCoins": 1300,
+        "rewardTokens": 1,
+        "shortLabel": "35 clears"
+      }
     },
     {
       "id": "event_april_fools_2026",
@@ -260,7 +352,26 @@
       "coinMultiplier": 2.0,
       "mutationOverride": "GRAVITY",
       "priority": 90,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 4,
+        "startDay": 1,
+        "endMonth": 4,
+        "endDay": 2
+      },
+      "effects": {
+        "rewardBoost": 2.0,
+        "boardRule": "GRAVITY"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 20,
+        "rewardCoins": 900,
+        "rewardTokens": 1,
+        "shortLabel": "20 clears"
+      }
     },
     {
       "id": "event_earth_day_2026",
@@ -288,7 +399,25 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 45,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 4,
+        "startDay": 22,
+        "endMonth": 4,
+        "endDay": 24
+      },
+      "effects": {
+        "rewardBoost": 1.5
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 30,
+        "rewardCoins": 1000,
+        "rewardTokens": 1,
+        "shortLabel": "30 clears"
+      }
     },
     {
       "id": "event_cinco_de_mayo_2026",
@@ -322,7 +451,27 @@
       "coinMultiplier": 1.75,
       "mutationOverride": "DOUBLE_SCORE",
       "priority": 40,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 5,
+        "startDay": 5,
+        "endMonth": 5,
+        "endDay": 7
+      },
+      "effects": {
+        "rewardBoost": 1.75,
+        "scoreBoost": 2.0,
+        "boardRule": "DOUBLE_SCORE"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 30,
+        "rewardCoins": 1200,
+        "rewardTokens": 1,
+        "shortLabel": "30 clears"
+      }
     },
     {
       "id": "event_summer_solstice_2026",
@@ -356,7 +505,27 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
       "priority": 35,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 6,
+        "startDay": 20,
+        "endMonth": 6,
+        "endDay": 26
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "comboHook": "CHAIN_SURGE",
+        "boardRule": "COMBO_BUFF"
+      },
+      "windowGoal": {
+        "type": "COMBOS",
+        "target": 90,
+        "rewardCoins": 1600,
+        "rewardTokens": 1,
+        "shortLabel": "90 combos"
+      }
     },
     {
       "id": "event_independence_2026",
@@ -384,7 +553,25 @@
       ],
       "coinMultiplier": 2.0,
       "priority": 60,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 7,
+        "startDay": 4,
+        "endMonth": 7,
+        "endDay": 6
+      },
+      "effects": {
+        "rewardBoost": 2.0
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 36,
+        "rewardCoins": 1400,
+        "rewardTokens": 1,
+        "shortLabel": "36 clears"
+      }
     },
     {
       "id": "event_beach_party_2026",
@@ -412,7 +599,25 @@
       ],
       "coinMultiplier": 1.25,
       "priority": 30,
-      "stackable": true
+      "stackable": true,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 7,
+        "startDay": 15,
+        "endMonth": 7,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 1.25
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 100,
+        "rewardCoins": 1800,
+        "rewardTokens": 2,
+        "shortLabel": "100 clears"
+      }
     },
     {
       "id": "event_back_to_school_2026",
@@ -446,7 +651,27 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "SMALL_PIECES",
       "priority": 25,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 8,
+        "startDay": 25,
+        "endMonth": 8,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "trayBias": "SMALL_PIECES",
+        "boardRule": "SMALL_PIECES"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 42,
+        "rewardCoins": 1300,
+        "rewardTokens": 1,
+        "shortLabel": "42 clears"
+      }
     },
     {
       "id": "event_oktoberfest_2026",
@@ -480,7 +705,27 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COLUMNS_BUFF",
       "priority": 25,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 9,
+        "startDay": 19,
+        "endMonth": 10,
+        "endDay": 4
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "scoreBoost": 1.3,
+        "boardRule": "COLUMNS_BUFF"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 70,
+        "rewardCoins": 1700,
+        "rewardTokens": 2,
+        "shortLabel": "70 clears"
+      }
     },
     {
       "id": "event_halloween_2026",
@@ -520,7 +765,27 @@
       "bossFreqOverride": 10,
       "mutationOverride": "FOG_OF_WAR",
       "priority": 70,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 10,
+        "startDay": 25,
+        "endMonth": 10,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 2.0,
+        "bossCadence": 10,
+        "boardRule": "FOG_OF_WAR"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 40,
+        "rewardCoins": 1600,
+        "rewardTokens": 2,
+        "shortLabel": "40 clears"
+      }
     },
     {
       "id": "event_dia_de_muertos_2026",
@@ -548,7 +813,25 @@
       ],
       "coinMultiplier": 2.0,
       "priority": 65,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 11,
+        "startDay": 1,
+        "endMonth": 11,
+        "endDay": 2
+      },
+      "effects": {
+        "rewardBoost": 2.0
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 20,
+        "rewardCoins": 900,
+        "rewardTokens": 1,
+        "shortLabel": "20 clears"
+      }
     },
     {
       "id": "event_thanksgiving_2026",
@@ -576,7 +859,24 @@
       ],
       "coinMultiplier": 1.75,
       "priority": 50,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "MOVABLE_HOLIDAY",
+        "holiday": "THANKSGIVING_US",
+        "startOffsetDays": -2,
+        "endOffsetDays": 0
+      },
+      "effects": {
+        "rewardBoost": 1.75
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 32,
+        "rewardCoins": 1200,
+        "rewardTokens": 1,
+        "shortLabel": "32 clears"
+      }
     },
     {
       "id": "event_black_friday_2026",
@@ -604,7 +904,25 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 95,
-      "stackable": true
+      "stackable": true,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "MOVABLE_HOLIDAY",
+        "holiday": "BLACK_FRIDAY_US",
+        "startOffsetDays": 0,
+        "endOffsetDays": 3
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "scoreBoost": 1.15
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 24,
+        "rewardCoins": 1100,
+        "rewardTokens": 1,
+        "shortLabel": "24 clears"
+      }
     },
     {
       "id": "event_winter_holidays_2026",
@@ -644,7 +962,28 @@
       "bossFreqOverride": 10,
       "mutationOverride": "GIANT_PIECES",
       "priority": 85,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 12,
+        "startDay": 20,
+        "endMonth": 12,
+        "endDay": 30
+      },
+      "effects": {
+        "rewardBoost": 2.0,
+        "trayBias": "BIG_PIECES",
+        "bossCadence": 10,
+        "boardRule": "GIANT_PIECES"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 55,
+        "rewardCoins": 1800,
+        "rewardTokens": 2,
+        "shortLabel": "55 clears"
+      }
     },
     {
       "id": "event_new_years_eve_2026",
@@ -678,7 +1017,27 @@
       "coinMultiplier": 3.0,
       "mutationOverride": "MIRROR_BOARD",
       "priority": 99,
-      "stackable": false
+      "stackable": false,
+      "slot": "HEADLINE",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 12,
+        "startDay": 31,
+        "endMonth": 1,
+        "endDay": 1
+      },
+      "effects": {
+        "rewardBoost": 3.0,
+        "scoreBoost": 1.25,
+        "boardRule": "MIRROR_BOARD"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 18,
+        "rewardCoins": 1400,
+        "rewardTokens": 2,
+        "shortLabel": "18 clears"
+      }
     },
     {
       "id": "event_weekly_boss_rush",
@@ -713,7 +1072,26 @@
       "coinMultiplier": 2.0,
       "bossFreqOverride": 5,
       "priority": 70,
-      "stackable": false
+      "stackable": false,
+      "slot": "SUPPORT",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 1,
+        "startDay": 1,
+        "endMonth": 12,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 2.0,
+        "bossCadence": 5
+      },
+      "windowGoal": {
+        "type": "BOSS_CLEARS",
+        "target": 12,
+        "rewardCoins": 900,
+        "rewardTokens": 1,
+        "shortLabel": "12 bosses"
+      }
     },
     {
       "id": "event_combo_challenge",
@@ -748,7 +1126,27 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
       "priority": 50,
-      "stackable": false
+      "stackable": false,
+      "slot": "SUPPORT",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 1,
+        "startDay": 1,
+        "endMonth": 12,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "comboHook": "CHAIN_EXTENSION",
+        "boardRule": "COMBO_BUFF"
+      },
+      "windowGoal": {
+        "type": "COMBOS",
+        "target": 80,
+        "rewardCoins": 850,
+        "rewardTokens": 1,
+        "shortLabel": "80 combos"
+      }
     },
     {
       "id": "event_speed_run",
@@ -783,7 +1181,26 @@
       "coinMultiplier": 2.0,
       "mutationOverride": "SPEED_ROUND",
       "priority": 50,
-      "stackable": false
+      "stackable": false,
+      "slot": "SUPPORT",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 1,
+        "startDay": 1,
+        "endMonth": 12,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 2.0,
+        "boardRule": "SPEED_ROUND"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 24,
+        "rewardCoins": 700,
+        "rewardTokens": 1,
+        "shortLabel": "24 clears"
+      }
     },
     {
       "id": "event_perfect_clear",
@@ -812,7 +1229,26 @@
       ],
       "coinMultiplier": 2.5,
       "priority": 60,
-      "stackable": false
+      "stackable": false,
+      "slot": "SUPPORT",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 1,
+        "startDay": 1,
+        "endMonth": 12,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 2.5,
+        "scoreBoost": 1.2
+      },
+      "windowGoal": {
+        "type": "PERFECT_CLEARS",
+        "target": 12,
+        "rewardCoins": 1000,
+        "rewardTokens": 1,
+        "shortLabel": "12 perfects"
+      }
     },
     {
       "id": "event_mystery_monday",
@@ -847,7 +1283,26 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "EARLY_BONUS",
       "priority": 85,
-      "stackable": false
+      "stackable": false,
+      "slot": "SUPPORT",
+      "schedule": {
+        "kind": "ANNUAL_WINDOW",
+        "startMonth": 1,
+        "startDay": 1,
+        "endMonth": 12,
+        "endDay": 31
+      },
+      "effects": {
+        "rewardBoost": 1.5,
+        "boardRule": "EARLY_BONUS"
+      },
+      "windowGoal": {
+        "type": "CLEARS",
+        "target": 18,
+        "rewardCoins": 700,
+        "rewardTokens": 1,
+        "shortLabel": "18 clears"
+      }
     }
   ],
   "ab": {
