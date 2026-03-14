@@ -1,105 +1,102 @@
-# 📤 Arquivos para GitHub
+# Files For GitHub
 
-Esta pasta contém os arquivos que devem ser colocados no repositório GitHub do remote config.
+This folder contains the files that must stay synchronized with the remote-config repository used outside the app.
 
-## 📁 Arquivo: `remote_config.json`
+## Main files
 
-### Onde colocar no GitHub:
-```
-https://github.com/lawliet8886/blockrush-remote-config/blob/main/remote_config.json
-```
+- GitHub target: `https://github.com/lawliet8886/blockrush-remote-config/blob/main/remote_config.json`
+- Local source of truth: `app/src/main/assets/remote_config_default.json`
+- GitHub mirror: `Paragithub/remote_config.json`
+- Schema mirror: `Paragithub/remote_config.schema.json`
 
-### Como atualizar:
-1. Acesse o repositório GitHub `blockrush-remote-config`
-2. Clique no arquivo `remote_config.json`
-3. Clique no ícone de lápis (Edit)
-4. Substitua TODO o conteúdo pelo que está nesta pasta
-5. Clique em "Commit changes"
+The two JSON files must always be identical.
 
-### ⚠️ Importante:
-- **Os dois arquivos devem ser IGUAIS:**
-  - `Paragithub/remote_config.json` (aqui)
-  - `app/src/main/assets/remote_config_default.json` (no projeto)
-  
-- **Sempre aumente a `version`** quando fizer mudanças!
-  - Versão atual: **5**
-  
-- **O app busca atualizações a cada 12 horas**
+## Update flow
 
----
+1. Edit `app/src/main/assets/remote_config_default.json`
+2. Replace `Paragithub/remote_config.json` with the exact same content
+3. Update `Paragithub/remote_config.schema.json` if the payload shape changed
+4. Commit the same JSON to the GitHub remote-config repository
+5. Bump the remote-config `version`
 
-## 🎉 Eventos Incluídos (2026)
+Current remote-config version: `7`
 
-| Data | Evento | Bônus |
-|------|--------|-------|
-| 29 Jan - 12 Feb | 🐴 Lunar New Year | 2x coins |
-| 10-16 Feb | 💕 Valentine's Rush | 1.5x coins |
-| 13-18 Feb | 🎭 Carnival Chaos | 1.75x coins |
-| 14-20 Mar | 🍀 Lucky Blocks | 1.5x coins |
-| 01 Apr | 🃏 April Fools Mayhem | 2x coins |
-| 03-07 Apr | 🐰 Easter Egg Hunt | 1.5x coins |
-| 22-24 Apr | 🌍 Earth Day | 1.5x coins |
-| 05-07 May | 🌮 Cinco de Mayo | 1.75x coins |
-| 20-26 Jun | ☀️ Summer Solstice | 1.5x coins |
-| 04-06 Jul | 🎆 Fireworks Festival | 2x coins |
-| 15-31 Jul | 🏖️ Beach Party | 1.25x coins |
-| 25-31 Aug | 📚 Back to School | 1.5x coins |
-| 19 Sep - 04 Oct | 🍺 Oktoberfest | 1.5x coins |
-| 25-31 Oct | 🎃 Spooky Season | 2x coins + Boss Rush |
-| 01-02 Nov | 💀 Día de los Muertos | 2x coins |
-| 26-29 Nov | 🦃 Thanksgiving | 1.75x coins |
-| 27-30 Nov | 🛒 Black Friday | 1.5x coins + Shop Sale |
-| 20-31 Dec | ❄️ Winter Wonderland | 2x coins + Daily Gifts |
-| 31 Dec - 01 Jan | 🎉 New Year's Countdown | 3x coins! |
+The app checks for updates every 12 hours.
 
-### Eventos de Fim de Semana (Rotativos)
-- 👾 Boss Rush Weekend
-- ⚡ Combo Challenge
-- 🏃 Speed Run Showdown
-- ✨ Perfect Clear Party
-- ❓ Mystery Monday
+## Annual live-event policy
 
----
+- The calendar is annual-base and repeats every year.
+- Each day can resolve at most:
+  - `1 HEADLINE`
+  - `1 SUPPORT`
+- `HEADLINE` is the flagship seasonal/fixed event.
+- `SUPPORT` is the recurring micro-event layer.
+- Legacy IDs with `_2026` are still kept for backward compatibility with app code, tests, menu presentation specs and remote text mappings.
+- `eventPrograms` stay separate from live events:
+  - daily / weekly / monthly programs are internal challenge layers
+  - they do not replace the `HEADLINE + SUPPORT` live-event resolver
 
-## 🔧 Como Adicionar Novo Evento
+## Payload model
 
-Adicione um objeto na lista `events`:
+Each live event now supports these annual fields:
 
-```json
-{
-  "id": "event_nome_unico",
-  "startKey": "YYYYMMDD",
-  "endKey": "YYYYMMDD",
-  "name": "🎮 Nome do Evento",
-  "description": "Descrição divertida!",
-  "category": "seasonal",
-  "palette": { "primary": "#COR1", "accent": "#COR2", "glow": "#COR3" },
-  "coinMultiplier": 1.5,
-  "bossFreqOverride": 10
-}
-```
+- `slot`
+  - `HEADLINE`
+  - `SUPPORT`
+- `schedule.kind`
+  - `ANNUAL_WINDOW`
+  - `MOVABLE_HOLIDAY`
+  - `FIXED_RANGE` (supported by schema/runtime, not used in the current annual pack)
+- `effects`
+  - `rewardBoost`
+  - `scoreBoost`
+  - `trayBias`
+  - `comboHook`
+  - `bossCadence`
+  - `clearMilestoneReward`
+  - `boardRule`
+- `windowGoal`
+  - light per-window objective metadata
 
-### Campos opcionais:
-- `bossFreqOverride`: Frequência de boss (menor = mais frequente)
-- `mutationOverride`: Modificador especial de gameplay
-- `category`: "seasonal", "weekend", "flash"
+`startKey` / `endKey` remain in the payload for backward compatibility and fallback parsing.
 
+## HEADLINE families in the current annual pack
 
-## ✅ app-ads.txt (AdMob)
+| Event ID | Schedule |
+| --- | --- |
+| `event_lunar_new_year_2026` | `ANNUAL_WINDOW` 01/29 -> 02/09 |
+| `event_valentines_2026` | `ANNUAL_WINDOW` 02/10 -> 02/14 |
+| `event_carnival_2026` | `MOVABLE_HOLIDAY` anchored to Carnival Tuesday |
+| `event_st_patrick_2026` | `ANNUAL_WINDOW` 03/14 -> 03/20 |
+| `event_april_fools_2026` | `ANNUAL_WINDOW` 04/01 -> 04/02 |
+| `event_easter_2026` | `MOVABLE_HOLIDAY` anchored to Easter Sunday |
+| `event_earth_day_2026` | `ANNUAL_WINDOW` 04/22 -> 04/24 |
+| `event_cinco_de_mayo_2026` | `ANNUAL_WINDOW` 05/05 -> 05/07 |
+| `event_summer_solstice_2026` | `ANNUAL_WINDOW` 06/20 -> 06/26 |
+| `event_independence_2026` | `ANNUAL_WINDOW` 07/04 -> 07/06 |
+| `event_beach_party_2026` | `ANNUAL_WINDOW` 07/15 -> 07/31 |
+| `event_back_to_school_2026` | `ANNUAL_WINDOW` 08/25 -> 08/31 |
+| `event_oktoberfest_2026` | `ANNUAL_WINDOW` 09/19 -> 10/04 |
+| `event_halloween_2026` | `ANNUAL_WINDOW` 10/25 -> 10/31 |
+| `event_dia_de_muertos_2026` | `ANNUAL_WINDOW` 11/01 -> 11/02 |
+| `event_thanksgiving_2026` | `MOVABLE_HOLIDAY` anchored to US Thanksgiving |
+| `event_black_friday_2026` | `MOVABLE_HOLIDAY` anchored to US Black Friday |
+| `event_winter_holidays_2026` | `ANNUAL_WINDOW` 12/20 -> 12/30 |
+| `event_new_years_eve_2026` | `ANNUAL_WINDOW` 12/31 -> 01/01 |
 
-Arquivo publicado:
-- `app-ads.txt` (raiz do repositório)
-- `docs/app-ads.txt` (publicado via GitHub Pages)
+## SUPPORT families in the current annual pack
 
-URL correta para este repositório (`blockrush-remote-config`):
-- `https://lawliet8886.github.io/blockrush-remote-config/app-ads.txt`
+- `event_weekly_boss_rush`
+- `event_combo_challenge`
+- `event_mystery_monday`
 
-> `https://lawliet8886.github.io/app-ads.txt` só funciona se o repositório for exatamente `lawliet8886.github.io`.
+Disabled support families kept out of the premium rotation:
 
-### Se der 404, confira:
-- Se você estiver trabalhando na branch `work`, o deploy também é disparado (workflow configurado para `main` e `work`).
-1. **Pages habilitado** em `Settings > Pages`.
-2. Fonte configurada para **GitHub Actions** (workflow `Deploy GitHub Pages`).
-3. Arquivo existe no deploy em `docs/app-ads.txt`.
-4. O deploy da action terminou com sucesso em `Actions`.
-5. Aguarde 2-10 minutos após o primeiro deploy.
+- `event_speed_run`
+- `event_perfect_clear`
+
+## Operational notes
+
+- `FAST_DECAY` is still out of the annual premium live-event pack.
+- `trayBias`, `comboHook` and `windowGoal` are present in payload/schema for the annual model, but runtime rollout may still be partial depending on the current app build.
+- Any future event-family rename that removes `_2026` from IDs must be coordinated with app code, tests and menu-presentation mappings.
