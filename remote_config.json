@@ -76,7 +76,7 @@
   },
   "events": [
     {
-      "id": "event_lunar_new_year_2026",
+      "id": "event_lunar_new_year",
       "i18nKey": "event.lunar_new_year",
       "shortLabel": "Ano Novo Lunar",
       "startKey": "20260129",
@@ -85,7 +85,7 @@
       "description": "Ano do Cavalo! 2x moedas + boss a cada 12 clears — bora enriquecer!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF0000",
@@ -107,7 +107,7 @@
       "coinMultiplier": 2.0,
       "bossFreqOverride": 12,
       "priority": 80,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -129,7 +129,7 @@
       }
     },
     {
-      "id": "event_valentines_2026",
+      "id": "event_valentines",
       "i18nKey": "event.valentines",
       "shortLabel": "Onda do Crush",
       "startKey": "20260210",
@@ -138,7 +138,7 @@
       "description": "1.5x moedas — combos valem mais, da match nos blocos!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF69B4",
@@ -154,7 +154,7 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 60,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -176,7 +176,7 @@
       }
     },
     {
-      "id": "event_carnival_2026",
+      "id": "event_carnival",
       "i18nKey": "event.carnival",
       "shortLabel": "Carnaval Insano",
       "startKey": "20260215",
@@ -185,7 +185,7 @@
       "description": "1.75x moedas + confete no score.",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FFD700",
@@ -202,7 +202,7 @@
       "coinMultiplier": 1.75,
       "mutationOverride": null,
       "priority": 55,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
@@ -223,7 +223,7 @@
       }
     },
     {
-      "id": "event_st_patrick_2026",
+      "id": "event_st_patrick",
       "i18nKey": "event.st_patrick",
       "shortLabel": "Sorte nos Blocos",
       "startKey": "20260314",
@@ -232,7 +232,7 @@
       "description": "1.5x moedas — hoje o RNG ta do teu lado, confia!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#00FF00",
@@ -248,7 +248,7 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 50,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -269,7 +269,7 @@
       }
     },
     {
-      "id": "event_easter_2026",
+      "id": "event_easter",
       "i18nKey": "event.easter",
       "shortLabel": "Caca aos Ovos",
       "startKey": "20260403",
@@ -278,7 +278,7 @@
       "description": "Color bombs sao os ovos! 1.5x moedas — caca tudo!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#E6E6FA",
@@ -300,7 +300,7 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COLOR_BOMB_DAY",
       "priority": 50,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
@@ -321,7 +321,7 @@
       }
     },
     {
-      "id": "event_april_fools_2026",
+      "id": "event_april_fools",
       "i18nKey": "event.april_fools",
       "shortLabel": "Dia da Zoeira",
       "startKey": "20260401",
@@ -330,7 +330,7 @@
       "description": "Gravidade zuada + 2x moedas — nada faz sentido!",
       "category": "flash",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF00FF",
@@ -352,7 +352,7 @@
       "coinMultiplier": 2.0,
       "mutationOverride": "GRAVITY",
       "priority": 90,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -374,7 +374,7 @@
       }
     },
     {
-      "id": "event_earth_day_2026",
+      "id": "event_earth_day",
       "i18nKey": "event.earth_day",
       "shortLabel": "Dia da Terra",
       "startKey": "20260422",
@@ -383,7 +383,7 @@
       "description": "1.5x moedas — joga verde e colhe recompensa!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#228B22",
@@ -399,7 +399,7 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 45,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -420,7 +420,7 @@
       }
     },
     {
-      "id": "event_cinco_de_mayo_2026",
+      "id": "event_cinco_de_mayo",
       "i18nKey": "event.cinco_de_mayo",
       "shortLabel": "Fiesta Picante",
       "startKey": "20260505",
@@ -429,7 +429,7 @@
       "description": "Score em dobro + 1.75x moedas — ta apimentado!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF4500",
@@ -451,7 +451,7 @@
       "coinMultiplier": 1.75,
       "mutationOverride": "DOUBLE_SCORE",
       "priority": 40,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -474,7 +474,7 @@
       }
     },
     {
-      "id": "event_summer_solstice_2026",
+      "id": "event_summer_solstice",
       "i18nKey": "event.summer_solstice",
       "shortLabel": "Verao Infinito",
       "startKey": "20260620",
@@ -483,7 +483,7 @@
       "description": "1.5x moedas + combo turbinado — maratona de streaks!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FFD700",
@@ -505,7 +505,7 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
       "priority": 35,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -528,7 +528,7 @@
       }
     },
     {
-      "id": "event_independence_2026",
+      "id": "event_independence",
       "i18nKey": "event.independence",
       "shortLabel": "Festival de Fogos",
       "startKey": "20260704",
@@ -537,7 +537,7 @@
       "description": "2x moedas — cada clear explode! Bora pra cima!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF0000",
@@ -553,7 +553,7 @@
       ],
       "coinMultiplier": 2.0,
       "priority": 60,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -574,7 +574,7 @@
       }
     },
     {
-      "id": "event_beach_party_2026",
+      "id": "event_beach_party",
       "i18nKey": "event.beach_party",
       "shortLabel": "Praia Mode",
       "startKey": "20260715",
@@ -583,7 +583,7 @@
       "description": "1.25x moedas o mes todo — vibe relax, surfa no combo!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#00CED1",
@@ -599,7 +599,7 @@
       ],
       "coinMultiplier": 1.25,
       "priority": 30,
-      "stackable": true,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -620,7 +620,7 @@
       }
     },
     {
-      "id": "event_back_to_school_2026",
+      "id": "event_back_to_school",
       "i18nKey": "event.back_to_school",
       "shortLabel": "Volta as Aulas",
       "startKey": "20260825",
@@ -629,7 +629,7 @@
       "description": "Pecas menores + 1.5x moedas — jogada de QI alto!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#4169E1",
@@ -651,7 +651,7 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "SMALL_PIECES",
       "priority": 25,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -674,7 +674,7 @@
       }
     },
     {
-      "id": "event_oktoberfest_2026",
+      "id": "event_oktoberfest",
       "i18nKey": "event.oktoberfest",
       "shortLabel": "Oktoberfest",
       "startKey": "20260919",
@@ -683,7 +683,7 @@
       "description": "1.5x moedas + colunas turbinadas — Prost!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#DAA520",
@@ -705,7 +705,7 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COLUMNS_BUFF",
       "priority": 25,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -728,7 +728,7 @@
       }
     },
     {
-      "id": "event_halloween_2026",
+      "id": "event_halloween",
       "i18nKey": "event.halloween",
       "shortLabel": "Noite do Terror",
       "startKey": "20261025",
@@ -737,7 +737,7 @@
       "description": "Nevoa no grid + 2x moedas + boss a cada 10 — sobreviva!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF6600",
@@ -765,7 +765,7 @@
       "bossFreqOverride": 10,
       "mutationOverride": "FOG_OF_WAR",
       "priority": 70,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -788,7 +788,7 @@
       }
     },
     {
-      "id": "event_dia_de_muertos_2026",
+      "id": "event_dia_de_muertos",
       "i18nKey": "event.dia_de_muertos",
       "shortLabel": "Dia dos Mortos",
       "startKey": "20261101",
@@ -797,7 +797,7 @@
       "description": "2x moedas — caveiras no grid, celebra com estilo!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FF1493",
@@ -813,7 +813,7 @@
       ],
       "coinMultiplier": 2.0,
       "priority": 65,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -834,7 +834,7 @@
       }
     },
     {
-      "id": "event_thanksgiving_2026",
+      "id": "event_thanksgiving",
       "i18nKey": "event.thanksgiving",
       "shortLabel": "Festa da Colheita",
       "startKey": "20261124",
@@ -843,7 +843,7 @@
       "description": "1.75x moedas — colhe combos e enche o cofre!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#D2691E",
@@ -859,7 +859,7 @@
       ],
       "coinMultiplier": 1.75,
       "priority": 50,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
@@ -879,7 +879,7 @@
       }
     },
     {
-      "id": "event_black_friday_2026",
+      "id": "event_black_friday",
       "i18nKey": "event.black_friday",
       "shortLabel": "Black Friday",
       "startKey": "20261127",
@@ -888,7 +888,7 @@
       "description": "1.5x moedas — aproveita ou chora depois!",
       "category": "flash",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#000000",
@@ -904,7 +904,7 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 95,
-      "stackable": true,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
@@ -925,7 +925,7 @@
       }
     },
     {
-      "id": "event_winter_holidays_2026",
+      "id": "event_winter_holidays",
       "i18nKey": "event.winter_holidays",
       "shortLabel": "Ferias Geladas",
       "startKey": "20261220",
@@ -934,7 +934,7 @@
       "description": "Pecas gigantes + 2x moedas + boss a cada 10!",
       "category": "seasonal",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#ADD8E6",
@@ -962,7 +962,7 @@
       "bossFreqOverride": 10,
       "mutationOverride": "GIANT_PIECES",
       "priority": 85,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -986,7 +986,7 @@
       }
     },
     {
-      "id": "event_new_years_eve_2026",
+      "id": "event_new_years_eve",
       "i18nKey": "event.new_years_eve",
       "shortLabel": "Virada do Ano",
       "startKey": "20261231",
@@ -995,7 +995,7 @@
       "description": "3x moedas + tabuleiro espelhado — vira tudo de cabeca pra baixo!",
       "category": "flash",
       "enabled": true,
-      "calendarTier": "PRIMARY",
+      "slot": "HEADLINE",
       "playConsoleEligible": true,
       "palette": {
         "primary": "#FFD700",
@@ -1017,7 +1017,7 @@
       "coinMultiplier": 3.0,
       "mutationOverride": "MIRROR_BOARD",
       "priority": 99,
-      "stackable": false,
+
       "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -1050,7 +1050,7 @@
       "category": "weekend",
       "recurrence": "biweekly_weekend",
       "enabled": true,
-      "calendarTier": "ROTATION",
+      "slot": "SUPPORT",
       "playConsoleEligible": false,
       "palette": {
         "primary": "#8B0000",
@@ -1072,7 +1072,7 @@
       "coinMultiplier": 2.0,
       "bossFreqOverride": 5,
       "priority": 70,
-      "stackable": false,
+
       "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -1104,7 +1104,7 @@
       "category": "weekend",
       "recurrence": "biweekly_weekend_odd",
       "enabled": true,
-      "calendarTier": "ROTATION",
+      "slot": "SUPPORT",
       "playConsoleEligible": false,
       "palette": {
         "primary": "#00FFFF",
@@ -1126,7 +1126,7 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
       "priority": 50,
-      "stackable": false,
+
       "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -1159,7 +1159,7 @@
       "category": "weekend",
       "recurrence": "monthly_first_weekend",
       "enabled": false,
-      "calendarTier": "ROTATION",
+      "slot": "SUPPORT",
       "playConsoleEligible": false,
       "palette": {
         "primary": "#FF4500",
@@ -1181,7 +1181,7 @@
       "coinMultiplier": 2.0,
       "mutationOverride": "SPEED_ROUND",
       "priority": 50,
-      "stackable": false,
+
       "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -1213,7 +1213,7 @@
       "category": "weekend",
       "recurrence": "monthly_first_weekend_odd",
       "enabled": false,
-      "calendarTier": "ROTATION",
+      "slot": "SUPPORT",
       "playConsoleEligible": false,
       "palette": {
         "primary": "#FFD700",
@@ -1229,7 +1229,7 @@
       ],
       "coinMultiplier": 2.5,
       "priority": 60,
-      "stackable": false,
+
       "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
@@ -1261,7 +1261,7 @@
       "category": "flash",
       "recurrence": "biweekly_monday",
       "enabled": true,
-      "calendarTier": "ROTATION",
+      "slot": "SUPPORT",
       "playConsoleEligible": false,
       "palette": {
         "primary": "#800080",
@@ -1283,7 +1283,7 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "EARLY_BONUS",
       "priority": 85,
-      "stackable": false,
+
       "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
