@@ -1404,5 +1404,13 @@
         }
       ]
     }
+  },
+  "ftue": {
+    "fullHubMinRuns": 3,
+    "adFreeRuns": 3,
+    "deferNotifUntilStage": "FIRST_REWARD",
+    "showDailyAfterStage": "FIRST_CLEAR",
+    "showEventsAfterStage": "CAMPAIGN_INTRO",
+    "showFullHubAfterStage": "FULL_HUB"
   }
 }
