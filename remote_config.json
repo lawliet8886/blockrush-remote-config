@@ -1405,6 +1405,14 @@
       ]
     }
   },
+  "contracts": {
+    "rerollCostCoins": 50,
+    "maxRerollsPerWeek": 1,
+    "streakFreezeCostCoins": 100,
+    "maxStreakFreezes": 2,
+    "streakBonusPerWeek": 5,
+    "streakBonusCap": 50
+  },
   "ftue": {
     "fullHubMinRuns": 3,
     "ad": {
