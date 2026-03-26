@@ -1417,7 +1417,16 @@
     "fullHubMinRuns": 3,
     "ad": {
       "adFreeRuns": 3,
-      "interstitialCooldownSeconds": 120
+      "interstitialCooldownSeconds": 180,
+      "navReturnToMenuChance": 0.12,
+      "navReturnToMenuShopHangarChance": 0.1,
+      "longSessionBreakChance": 0.2,
+      "campaignObjectiveChance": 0.65,
+      "dailyObjectiveChance": 0.55,
+      "weeklyObjectiveChance": 0.75,
+      "monthlyObjectiveChance": 0.85,
+      "seasonPassLevelUpChance": 0.4,
+      "maxInterstitialsPerSession": 3
     },
     "menu": {
       "showDailyAfterStage": "FIRST_CLEAR",
