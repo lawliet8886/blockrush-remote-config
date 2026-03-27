@@ -1437,5 +1437,17 @@
       "deferUntilStage": "FIRST_REWARD",
       "maxPromptsPerDay": 1
     }
+  },
+  "multiplayerRogueConfig": {
+    "enabled": true,
+    "seasonId": "season_2026_s1",
+    "casualChance": 0.52,
+    "rogueChance": 0.30,
+    "weekendChance": 0.10,
+    "dailyMirrorChance": 0.08,
+    "runCoinMultiplierMin": 0.72,
+    "runCoinMultiplierMax": 1.55,
+    "speedRoundDurationMinSec": 60,
+    "speedRoundDurationMaxSec": 120
   }
 }
