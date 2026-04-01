@@ -13,6 +13,8 @@
     "bossCriticalAlsoTriggers": true,
     "dailyBaseTarget": 5000,
     "dailyStreakStep": 500,
+    "overlordWeeklyBountyBonusCoinsMin": 150,
+    "overlordWeeklyBountyBonusCoinsPct": 0.4,
     "assistMockAdSecondsStrong": 30,
     "assistMockAdSecondsStrongDebug": 2,
     "assistStrongMaxPerRun": 2,
