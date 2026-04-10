@@ -1418,7 +1418,7 @@
   "ftue": {
     "fullHubMinRuns": 3,
     "ad": {
-      "adFreeRuns": 3,
+      "adFreeRuns": 5,
       "interstitialCooldownSeconds": 180,
       "navReturnToMenuChance": 0.12,
       "navReturnToMenuShopHangarChance": 0.1,
