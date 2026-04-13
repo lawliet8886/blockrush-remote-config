@@ -1416,9 +1416,9 @@
     "streakBonusCap": 50
   },
   "ftue": {
-    "fullHubMinRuns": 3,
+    "fullHubMinRuns": 4,
     "ad": {
-      "adFreeRuns": 5,
+      "adFreeRuns": 8,
       "interstitialCooldownSeconds": 180,
       "navReturnToMenuChance": 0.12,
       "navReturnToMenuShopHangarChance": 0.1,
@@ -1432,11 +1432,11 @@
     },
     "menu": {
       "showDailyAfterStage": "FIRST_CLEAR",
-      "showEventsAfterStage": "CAMPAIGN_INTRO",
+      "showEventsAfterStage": "FULL_HUB",
       "showFullHubAfterStage": "FULL_HUB"
     },
     "notification": {
-      "deferUntilStage": "FIRST_REWARD",
+      "deferUntilStage": "FULL_HUB",
       "maxPromptsPerDay": 1
     }
   },
