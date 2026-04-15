@@ -13,8 +13,6 @@
     "bossCriticalAlsoTriggers": true,
     "dailyBaseTarget": 5000,
     "dailyStreakStep": 500,
-    "overlordWeeklyBountyBonusCoinsMin": 150,
-    "overlordWeeklyBountyBonusCoinsPct": 0.4,
     "assistMockAdSecondsStrong": 30,
     "assistMockAdSecondsStrongDebug": 2,
     "assistStrongMaxPerRun": 2,
@@ -1316,7 +1314,7 @@
       "enabled": true,
       "displayName": "Evento Diário",
       "shortSummary": "Um desafio rápido renovado a cada 24 horas.",
-      "details": "As regras são simples: jogue o Evento Diário e conquiste a maior pontuação possível. As recompensas baseiam-se no seu desempenho!",
+      "details": "As regras são simples: jogue o Daily Rift e conquiste a maior pontuação possível. As recompensas baseiam-se no seu desempenho!",
       "alwaysOpen": true,
       "anchorStartKey": "20260101",
       "openDays": 1,
@@ -1332,7 +1330,7 @@
       "playerFacingRewards": [
         {
           "type": "daily_reward",
-          "label": "Recompensa segue as regras do Evento Diário"
+          "label": "Recompensa segue as regras do Daily Rift"
         }
       ]
     },
@@ -1406,56 +1404,5 @@
         }
       ]
     }
-  },
-  "contracts": {
-    "rerollCostCoins": 50,
-    "maxRerollsPerWeek": 1,
-    "streakFreezeCostCoins": 100,
-    "maxStreakFreezes": 2,
-    "streakBonusPerWeek": 5,
-    "streakBonusCap": 50
-  },
-  "ftue": {
-    "fullHubMinRuns": 4,
-    "ad": {
-      "adFreeRuns": 8,
-      "interstitialCooldownSeconds": 180,
-      "navReturnToMenuChance": 0.12,
-      "navReturnToMenuShopHangarChance": 0.1,
-      "longSessionBreakChance": 0.2,
-      "campaignObjectiveChance": 0.65,
-      "dailyObjectiveChance": 0.55,
-      "weeklyObjectiveChance": 0.75,
-      "monthlyObjectiveChance": 0.85,
-      "seasonPassLevelUpChance": 0.4,
-      "maxInterstitialsPerSession": 3
-    },
-    "menu": {
-      "showDailyAfterStage": "FIRST_CLEAR",
-      "showEventsAfterStage": "FULL_HUB",
-      "showFullHubAfterStage": "FULL_HUB"
-    },
-    "notification": {
-      "deferUntilStage": "FULL_HUB",
-      "maxPromptsPerDay": 1
-    }
-  },
-  "multiplayerRogueConfig": {
-    "enabled": true,
-    "seasonId": "season_2026_s1",
-    "presentationPackId": "neon_cobalt",
-    "casualChance": 0.52,
-    "rogueChance": 0.30,
-    "weekendChance": 0.10,
-    "dailyMirrorChance": 0.08,
-    "dailyMirrorRitualEnabled": true,
-    "dailyMirrorRitualMinIntervalHours": 24,
-    "penaltyCueSeconds": [10, 5, 3, 2, 1],
-    "hudOverloadThreshold": 3,
-    "hudHighRiskThreshold": 4,
-    "runCoinMultiplierMin": 0.72,
-    "runCoinMultiplierMax": 1.55,
-    "speedRoundDurationMinSec": 60,
-    "speedRoundDurationMaxSec": 120
   }
 }
