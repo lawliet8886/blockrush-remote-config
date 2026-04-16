@@ -4,7 +4,8 @@
   "features": {
     "cleanHudDefault": true,
     "enableDaily": true,
-    "enableOverlord": true
+    "enableOverlord": true,
+    "enableGridBoss": true
   },
   "balance": {
     "comboGain": 0.15,
