@@ -12,6 +12,7 @@
     "bossFinisherContextualEnabled": false,
     "bossExitVariantsEnabled": false,
     "bossPartialEntryGameplayEnabled": false,
+    "bossShortEntryEnabled": false,
     "bossEphemeralHudEnabled": true,
     "bossNoMovesAutoRescueEnabled": true
   },
