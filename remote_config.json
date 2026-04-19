@@ -5,7 +5,15 @@
     "cleanHudDefault": true,
     "enableDaily": true,
     "enableOverlord": true,
-    "enableGridBoss": true
+    "enableGridBoss": true,
+    "bossCounterCastEnabled": false,
+    "bossWoundedArenaEnabled": false,
+    "bossAnchorsEnabled": false,
+    "bossFinisherContextualEnabled": false,
+    "bossExitVariantsEnabled": false,
+    "bossPartialEntryGameplayEnabled": false,
+    "bossEphemeralHudEnabled": true,
+    "bossNoMovesAutoRescueEnabled": true
   },
   "balance": {
     "comboGain": 0.15,
