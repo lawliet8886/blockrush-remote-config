@@ -25,6 +25,7 @@
     "dailyStreakStep": 500,
     "overlordWeeklyBountyBonusCoinsMin": 150,
     "overlordWeeklyBountyBonusCoinsPct": 0.4,
+    "overlordWeeklyRewardTokens": 7,
     "assistMockAdSecondsStrong": 30,
     "assistMockAdSecondsStrongDebug": 2,
     "assistStrongMaxPerRun": 2,
