@@ -6,6 +6,7 @@
     "enableDaily": true,
     "enableOverlord": true,
     "enableGridBoss": true,
+    "bossHazardsEnabled": false,
     "bossCounterCastEnabled": false,
     "bossWoundedArenaEnabled": false,
     "bossAnchorsEnabled": false,
