@@ -1,12 +1,12 @@
 {
-  "version": 7,
+  "version": 8,
   "minSupportedVersion": 1,
   "features": {
     "cleanHudDefault": true,
     "enableDaily": true,
     "enableOverlord": true,
     "enableGridBoss": true,
-    "bossHazardsEnabled": false,
+    "bossHazardsEnabled": true,
     "bossCounterCastEnabled": false,
     "bossWoundedArenaEnabled": false,
     "bossAnchorsEnabled": false,
@@ -16,7 +16,7 @@
     "bossShortEntryEnabled": false,
     "bossEphemeralHudEnabled": true,
     "bossNoMovesAutoRescueEnabled": true,
-    "preBossForeshadowingEnabled": false
+    "preBossForeshadowingEnabled": true
   },
   "balance": {
     "comboGain": 0.15,
