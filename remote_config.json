@@ -15,7 +15,8 @@
     "bossPartialEntryGameplayEnabled": false,
     "bossShortEntryEnabled": false,
     "bossEphemeralHudEnabled": true,
-    "bossNoMovesAutoRescueEnabled": true
+    "bossNoMovesAutoRescueEnabled": true,
+    "preBossForeshadowingEnabled": false
   },
   "balance": {
     "comboGain": 0.15,
@@ -35,7 +36,17 @@
     "assistReshuffleCostCoins": 120,
     "assistReshuffleFreePerRun": 0,
     "assistShowGlowOnIdleSeconds": 18,
-    "assistShowGlowOnCritical": true
+    "assistShowGlowOnCritical": true,
+    "foreshadowStartClears": 6,
+    "foreshadowStage2Clears": 4,
+    "foreshadowStage3Clears": 2,
+    "foreshadowMaxVoiceLines": 3,
+    "foreshadowVoiceCooldownClears": 1,
+    "foreshadowVoiceCooldownMs": 6000,
+    "foreshadowVoiceEarliestClears": 4,
+    "foreshadowVoiceLatestClears": 2,
+    "foreshadowVoiceBlockAtClears": 1,
+    "foreshadowVoicePlaybackBudgetMs": 5500
   },
   "drops": {
     "tokenPerfectChance": 0.05,
