@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "minSupportedVersion": 1,
   "features": {
     "cleanHudDefault": true,
@@ -16,7 +16,8 @@
     "bossShortEntryEnabled": false,
     "bossEphemeralHudEnabled": true,
     "bossNoMovesAutoRescueEnabled": true,
-    "preBossForeshadowingEnabled": true
+    "preBossForeshadowingEnabled": true,
+    "portalGlSpikeEnabled": false
   },
   "balance": {
     "comboGain": 0.15,
@@ -46,7 +47,10 @@
     "foreshadowVoiceEarliestClears": 4,
     "foreshadowVoiceLatestClears": 2,
     "foreshadowVoiceBlockAtClears": 1,
-    "foreshadowVoicePlaybackBudgetMs": 5500
+    "foreshadowVoicePlaybackBudgetMs": 5500,
+    "voiceSlotSixClearsThreshold": 6,
+    "voiceSlotFourClearsThreshold": 4,
+    "voiceSlotTwoClearsThreshold": 2
   },
   "drops": {
     "tokenPerfectChance": 0.05,
