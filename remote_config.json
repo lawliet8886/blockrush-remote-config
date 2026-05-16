@@ -132,8 +132,6 @@
       "coinMultiplier": 2.0,
       "bossFreqOverride": 12,
       "priority": 80,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 1,
@@ -179,8 +177,6 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 60,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 2,
@@ -227,8 +223,6 @@
       "coinMultiplier": 1.75,
       "mutationOverride": null,
       "priority": 55,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
         "holiday": "CARNIVAL_TUESDAY",
@@ -273,8 +267,6 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 50,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 3,
@@ -325,8 +317,6 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COLOR_BOMB_DAY",
       "priority": 50,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
         "holiday": "EASTER_SUNDAY",
@@ -377,8 +367,6 @@
       "coinMultiplier": 2.0,
       "mutationOverride": "GRAVITY",
       "priority": 90,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 4,
@@ -424,8 +412,6 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 45,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 4,
@@ -476,8 +462,6 @@
       "coinMultiplier": 1.75,
       "mutationOverride": "DOUBLE_SCORE",
       "priority": 40,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 5,
@@ -530,8 +514,6 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
       "priority": 35,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 6,
@@ -578,8 +560,6 @@
       ],
       "coinMultiplier": 2.0,
       "priority": 60,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 7,
@@ -624,8 +604,6 @@
       ],
       "coinMultiplier": 1.25,
       "priority": 30,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 7,
@@ -676,8 +654,6 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "SMALL_PIECES",
       "priority": 25,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 8,
@@ -730,8 +706,6 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COLUMNS_BUFF",
       "priority": 25,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 9,
@@ -790,8 +764,6 @@
       "bossFreqOverride": 10,
       "mutationOverride": "FOG_OF_WAR",
       "priority": 70,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 10,
@@ -838,8 +810,6 @@
       ],
       "coinMultiplier": 2.0,
       "priority": 65,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 11,
@@ -884,8 +854,6 @@
       ],
       "coinMultiplier": 1.75,
       "priority": 50,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
         "holiday": "THANKSGIVING_US",
@@ -929,8 +897,6 @@
       ],
       "coinMultiplier": 1.5,
       "priority": 95,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "MOVABLE_HOLIDAY",
         "holiday": "BLACK_FRIDAY_US",
@@ -987,8 +953,6 @@
       "bossFreqOverride": 10,
       "mutationOverride": "GIANT_PIECES",
       "priority": 85,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 12,
@@ -1042,8 +1006,6 @@
       "coinMultiplier": 3.0,
       "mutationOverride": "MIRROR_BOARD",
       "priority": 99,
-
-      "slot": "HEADLINE",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 12,
@@ -1097,8 +1059,6 @@
       "coinMultiplier": 2.0,
       "bossFreqOverride": 5,
       "priority": 70,
-
-      "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 1,
@@ -1151,8 +1111,6 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "COMBO_BUFF",
       "priority": 50,
-
-      "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 1,
@@ -1206,8 +1164,6 @@
       "coinMultiplier": 2.0,
       "mutationOverride": "SPEED_ROUND",
       "priority": 50,
-
-      "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 1,
@@ -1254,8 +1210,6 @@
       ],
       "coinMultiplier": 2.5,
       "priority": 60,
-
-      "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 1,
@@ -1308,8 +1262,6 @@
       "coinMultiplier": 1.5,
       "mutationOverride": "EARLY_BONUS",
       "priority": 85,
-
-      "slot": "SUPPORT",
       "schedule": {
         "kind": "ANNUAL_WINDOW",
         "startMonth": 1,
@@ -1399,7 +1351,7 @@
       "enabled": true,
       "displayName": "Evento Mensal",
       "shortSummary": "O teste supremo de resistência.",
-      "details": "O Evento Mensal dura 30 dias, descansa por 30 dias e volta em um ciclo longo. A meta é maior, as recompensas são maiores e o News mostra objetivo, janela, mutador quando existir e regras de coleta para você planejar as tentativas."
+      "details": "O Evento Mensal dura 30 dias, descansa por 30 dias e volta em um ciclo longo. A meta é maior, as recompensas são maiores e o News mostra objetivo, janela, mutador quando existir e regras de coleta para você planejar as tentativas.",
       "alwaysOpen": false,
       "anchorStartKey": "20260101",
       "openDays": 30,
